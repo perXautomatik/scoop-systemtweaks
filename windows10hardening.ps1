@@ -2,7 +2,9 @@
 # Tweaked Win10 Initial Setup Script
 # Primary Author: Disassembler <disassembler@dasm.cz>
 # Original Version: 1.4, 2016-01-16
-# Tweaked based on persona preferences for @alirobe 2016-03-23 - v1.4.1
+# Tweaked based on personal preferences for @alirobe 2016-03-23 - v1.4.1
+# NOTE: MAKE SURE YOU READ THIS SCRIPT CAREFULLY BEFORE RUNNING IT 
+#       This script will reboot your machine when completed.
 ##########
  
 # Ask for elevated permissions if required
@@ -565,8 +567,6 @@ Set-ItemProperty -Path "HKCR:\Applications\photoviewer.dll\shell\open\DropTarget
 #   New-PSDrive -Name HKCR -PSProvider Registry -Root HKEY_CLASSES_ROOT | Out-Null
 # }
 # Remove-Item -Path "HKCR:\Applications\photoviewer.dll\shell\open" -Recurse
- 
- 
  
 ##########
 # Restart
