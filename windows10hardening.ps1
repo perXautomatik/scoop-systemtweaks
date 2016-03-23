@@ -1,7 +1,8 @@
 ##########
-# Win10 Initial Setup Script
-# Author: Disassembler <disassembler@dasm.cz>
-# Version: 1.4, 2016-01-16
+# Tweaked Win10 Initial Setup Script
+# Primary Author: Disassembler <disassembler@dasm.cz>
+# Original Version: 1.4, 2016-01-16
+# Tweaked based on persona preferences for @alirobe 2016-03-23 - v1.4.1
 ##########
  
 # Ask for elevated permissions if required
