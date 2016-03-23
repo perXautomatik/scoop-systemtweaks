@@ -36,9 +36,9 @@ Set-ItemProperty -Path "HKLM:\Software\Microsoft\PolicyManager\default\WiFi\Allo
 # Set-ItemProperty -Path "HKLM:\Software\Microsoft\PolicyManager\default\WiFi\AllowAutoConnectToWiFiSenseHotspots" -Name "Value" -Type DWord -Value 1
  
 # Disable SmartScreen Filter
-Write-Host "Disabling SmartScreen Filter..."
-Set-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Explorer" -Name "SmartScreenEnabled" -Type String -Value "Off"
-Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\AppHost" -Name "EnableWebContentEvaluation" -Type DWord -Value 0
+# Write-Host "Disabling SmartScreen Filter..."
+# Set-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Explorer" -Name "SmartScreenEnabled" -Type String -Value "Off"
+# Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\AppHost" -Name "EnableWebContentEvaluation" -Type DWord -Value 0
  
 # Enable SmartScreen Filter
 # Set-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Explorer" -Name "SmartScreenEnabled" -Type String -Value "RequireAdmin"
@@ -175,8 +175,8 @@ Set-Service "dmwappushservice" -StartupType Disabled
 # Set-NetFirewallProfile -Profile * -Enabled True
  
 # Disable Windows Defender
-Write-Host "Disabling Windows Defender..."
-Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows Defender" -Name "DisableAntiSpyware" -Type DWord -Value 1
+# Write-Host "Disabling Windows Defender..."
+# Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows Defender" -Name "DisableAntiSpyware" -Type DWord -Value 1
  
 # Enable Windows Defender
 # Remove-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows Defender" -Name "DisableAntiSpyware"
@@ -235,11 +235,11 @@ Set-Service "HomeGroupProvider" -StartupType Disabled
 # Remove-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\PushNotifications" -Name "ToastEnabled"
  
 # Disable Lock screen
-# Write-Host "Disabling Lock screen..."
-# If (!(Test-Path "HKLM:\Software\Policies\Microsoft\Windows\Personalization")) {
-#   New-Item -Path "HKLM:\Software\Policies\Microsoft\Windows\Personalization" | Out-Null
-# }
-# Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\Personalization" -Name "NoLockScreen" -Type DWord -Value 1
+Write-Host "Disabling Lock screen..."
+If (!(Test-Path "HKLM:\Software\Policies\Microsoft\Windows\Personalization")) {
+  New-Item -Path "HKLM:\Software\Policies\Microsoft\Windows\Personalization" | Out-Null
+}
+Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\Personalization" -Name "NoLockScreen" -Type DWord -Value 1
  
 # Enable Lock screen
 # Remove-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\Personalization" -Name "NoLockScreen"
@@ -261,9 +261,9 @@ Set-Service "HomeGroupProvider" -StartupType Disabled
 # Enable Autorun
 # Remove-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" -Name "NoDriveTypeAutoRun"
  
-# Disable Sticky keys prompt
-# Write-Host "Disabling Sticky keys prompt..."
-# Set-ItemProperty -Path "HKCU:\Control Panel\Accessibility\StickyKeys" -Name "Flags" -Type String -Value "506"
+Disable Sticky keys prompt
+Write-Host "Disabling Sticky keys prompt..." 
+Set-ItemProperty -Path "HKCU:\Control Panel\Accessibility\StickyKeys" -Name "Flags" -Type String -Value "506"
  
 # Enable Sticky keys prompt
 # Set-ItemProperty -Path "HKCU:\Control Panel\Accessibility\StickyKeys" -Name "Flags" -Type String -Value "510"
@@ -276,8 +276,8 @@ Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search" 
 # Remove-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search" -Name "SearchboxTaskbarMode"
  
 # Hide Task View button
-Write-Host "Hiding Task View button..."
-Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "ShowTaskViewButton" -Type DWord -Value 0
+# Write-Host "Hiding Task View button..."
+# Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "ShowTaskViewButton" -Type DWord -Value 0
  
 # Show Task View button
 # Remove-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "ShowTaskViewButton"
@@ -311,8 +311,8 @@ Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer
 # Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "HideFileExt" -Type DWord -Value 1
  
 # Show hidden files
-# Write-Host "Showing hidden files..."
-# Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "Hidden" -Type DWord -Value 1
+Write-Host "Showing hidden files..."
+Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "Hidden" -Type DWord -Value 1
  
 # Hide hidden files
 # Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "Hidden" -Type DWord -Value 2
@@ -362,18 +362,18 @@ Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer
 # New-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{374DE290-123F-4565-9164-39C4925E467B}"
  
 # Remove Music icon from computer namespace
-Write-Host "Removing Music icon from computer namespace..."
-Remove-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{3dfdf296-dbec-4fb4-81d1-6a3438bcf4de}" -Recurse -ErrorAction SilentlyContinue
-Remove-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{1CF1260C-4DD0-4ebb-811F-33C572699FDE}" -Recurse -ErrorAction SilentlyContinue
+# Write-Host "Removing Music icon from computer namespace..."
+# Remove-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{3dfdf296-dbec-4fb4-81d1-6a3438bcf4de}" -Recurse -ErrorAction SilentlyContinue
+# Remove-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{1CF1260C-4DD0-4ebb-811F-33C572699FDE}" -Recurse -ErrorAction SilentlyContinue
  
 # Add Music icon to computer namespace
 # New-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{3dfdf296-dbec-4fb4-81d1-6a3438bcf4de}"
 # New-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{1CF1260C-4DD0-4ebb-811F-33C572699FDE}"
  
 # Remove Pictures icon from computer namespace
-#Write-Host "Removing Pictures icon from computer namespace..."
-#Remove-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{24ad3ad4-a569-4530-98e1-ab02f9417aa8}" -Recurse -ErrorAction SilentlyContinue
-#Remove-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{3ADD1653-EB32-4cb0-BBD7-DFA0ABB5ACCA}" -Recurse -ErrorAction SilentlyContinue
+Write-Host "Removing Pictures icon from computer namespace..."
+Remove-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{24ad3ad4-a569-4530-98e1-ab02f9417aa8}" -Recurse -ErrorAction SilentlyContinue
+Remove-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{3ADD1653-EB32-4cb0-BBD7-DFA0ABB5ACCA}" -Recurse -ErrorAction SilentlyContinue
  
 # Add Pictures icon to computer namespace
 # New-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{24ad3ad4-a569-4530-98e1-ab02f9417aa8}"
@@ -405,38 +405,38 @@ Remove-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Explorer\MyCo
 ##########
  
 # Disable OneDrive
-Write-Host "Disabling OneDrive..."
-If (!(Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\OneDrive")) {
-    New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\OneDrive" | Out-Null
-}
-Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\OneDrive" -Name "DisableFileSyncNGSC" -Type DWord -Value 1
+# Write-Host "Disabling OneDrive..."
+# If (!(Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\OneDrive")) {
+#     New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\OneDrive" | Out-Null
+# }
+# Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\OneDrive" -Name "DisableFileSyncNGSC" -Type DWord -Value 1
  
 # Enable OneDrive
 # Remove-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\OneDrive" -Name "DisableFileSyncNGSC"
  
 # Uninstall OneDrive
-Write-Host "Uninstalling OneDrive..."
-Stop-Process -Name OneDrive -ErrorAction SilentlyContinue
-Start-Sleep -s 3
-$onedrive = "$env:SYSTEMROOT\SysWOW64\OneDriveSetup.exe"
-If (!(Test-Path $onedrive)) {
-    $onedrive = "$env:SYSTEMROOT\System32\OneDriveSetup.exe"
-}
-Start-Process $onedrive "/uninstall" -NoNewWindow -Wait
-Start-Sleep -s 3
-Stop-Process -Name explorer -ErrorAction SilentlyContinue
-Start-Sleep -s 3
-Remove-Item "$env:USERPROFILE\OneDrive" -Force -Recurse -ErrorAction SilentlyContinue
-Remove-Item "$env:LOCALAPPDATA\Microsoft\OneDrive" -Force -Recurse -ErrorAction SilentlyContinue
-Remove-Item "$env:PROGRAMDATA\Microsoft OneDrive" -Force -Recurse -ErrorAction SilentlyContinue
-If (Test-Path "$env:SYSTEMDRIVE\OneDriveTemp") {
-    Remove-Item "$env:SYSTEMDRIVE\OneDriveTemp" -Force -Recurse -ErrorAction SilentlyContinue
-}
-If (!(Test-Path "HKCR:")) {
-    New-PSDrive -Name HKCR -PSProvider Registry -Root HKEY_CLASSES_ROOT | Out-Null
-}
-Remove-Item -Path "HKCR:\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}" -Recurse -ErrorAction SilentlyContinue
-Remove-Item -Path "HKCR:\Wow6432Node\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}" -Recurse -ErrorAction SilentlyContinue
+# Write-Host "Uninstalling OneDrive..."
+# Stop-Process -Name OneDrive -ErrorAction SilentlyContinue
+# Start-Sleep -s 3
+# $onedrive = "$env:SYSTEMROOT\SysWOW64\OneDriveSetup.exe"
+# If (!(Test-Path $onedrive)) {
+#     $onedrive = "$env:SYSTEMROOT\System32\OneDriveSetup.exe"
+# }
+# Start-Process $onedrive "/uninstall" -NoNewWindow -Wait
+# Start-Sleep -s 3
+# Stop-Process -Name explorer -ErrorAction SilentlyContinue
+# Start-Sleep -s 3
+# Remove-Item "$env:USERPROFILE\OneDrive" -Force -Recurse -ErrorAction SilentlyContinue
+# Remove-Item "$env:LOCALAPPDATA\Microsoft\OneDrive" -Force -Recurse -ErrorAction SilentlyContinue
+# Remove-Item "$env:PROGRAMDATA\Microsoft OneDrive" -Force -Recurse -ErrorAction SilentlyContinue
+# If (Test-Path "$env:SYSTEMDRIVE\OneDriveTemp") {
+#     Remove-Item "$env:SYSTEMDRIVE\OneDriveTemp" -Force -Recurse -ErrorAction SilentlyContinue
+# }
+# If (!(Test-Path "HKCR:")) {
+#     New-PSDrive -Name HKCR -PSProvider Registry -Root HKEY_CLASSES_ROOT | Out-Null
+# }
+# Remove-Item -Path "HKCR:\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}" -Recurse -ErrorAction SilentlyContinue
+# Remove-Item -Path "HKCR:\Wow6432Node\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}" -Recurse -ErrorAction SilentlyContinue
  
 # Install OneDrive
 # $onedrive = "$env:SYSTEMROOT\SysWOW64\OneDriveSetup.exe"
@@ -454,26 +454,26 @@ Get-AppxPackage "Microsoft.BingSports" | Remove-AppxPackage
 Get-AppxPackage "Microsoft.BingWeather" | Remove-AppxPackage
 Get-AppxPackage "Microsoft.Getstarted" | Remove-AppxPackage
 Get-AppxPackage "Microsoft.MicrosoftOfficeHub" | Remove-AppxPackage
-Get-AppxPackage "Microsoft.MicrosoftSolitaireCollection" | Remove-AppxPackage
-Get-AppxPackage "Microsoft.Office.OneNote" | Remove-AppxPackage
-Get-AppxPackage "Microsoft.People" | Remove-AppxPackage
-Get-AppxPackage "Microsoft.SkypeApp" | Remove-AppxPackage
-Get-AppxPackage "Microsoft.Windows.Photos" | Remove-AppxPackage
-Get-AppxPackage "Microsoft.WindowsAlarms" | Remove-AppxPackage
-Get-AppxPackage "Microsoft.WindowsCamera" | Remove-AppxPackage
-Get-AppxPackage "microsoft.windowscommunicationsapps" | Remove-AppxPackage
-Get-AppxPackage "Microsoft.WindowsMaps" | Remove-AppxPackage
+# Get-AppxPackage "Microsoft.MicrosoftSolitaireCollection" | Remove-AppxPackage
+# Get-AppxPackage "Microsoft.Office.OneNote" | Remove-AppxPackage
+# Get-AppxPackage "Microsoft.People" | Remove-AppxPackage
+# Get-AppxPackage "Microsoft.SkypeApp" | Remove-AppxPackage
+# Get-AppxPackage "Microsoft.Windows.Photos" | Remove-AppxPackage
+# Get-AppxPackage "Microsoft.WindowsAlarms" | Remove-AppxPackage
+# Get-AppxPackage "Microsoft.WindowsCamera" | Remove-AppxPackage
+# Get-AppxPackage "microsoft.windowscommunicationsapps" | Remove-AppxPackage
+# Get-AppxPackage "Microsoft.WindowsMaps" | Remove-AppxPackage
 Get-AppxPackage "Microsoft.WindowsPhone" | Remove-AppxPackage
-Get-AppxPackage "Microsoft.WindowsSoundRecorder" | Remove-AppxPackage
+# Get-AppxPackage "Microsoft.WindowsSoundRecorder" | Remove-AppxPackage
 Get-AppxPackage "Microsoft.XboxApp" | Remove-AppxPackage
-Get-AppxPackage "Microsoft.ZuneMusic" | Remove-AppxPackage
-Get-AppxPackage "Microsoft.ZuneVideo" | Remove-AppxPackage
-Get-AppxPackage "Microsoft.AppConnector" | Remove-AppxPackage
-Get-AppxPackage "Microsoft.ConnectivityStore" | Remove-AppxPackage
-Get-AppxPackage "Microsoft.Office.Sway" | Remove-AppxPackage
-Get-AppxPackage "Microsoft.Messaging" | Remove-AppxPackage
-Get-AppxPackage "Microsoft.CommsPhone" | Remove-AppxPackage
-Get-AppxPackage "9E2F88E3.Twitter" | Remove-AppxPackage
+# Get-AppxPackage "Microsoft.ZuneMusic" | Remove-AppxPackage
+# Get-AppxPackage "Microsoft.ZuneVideo" | Remove-AppxPackage
+# Get-AppxPackage "Microsoft.AppConnector" | Remove-AppxPackage
+# Get-AppxPackage "Microsoft.ConnectivityStore" | Remove-AppxPackage
+# Get-AppxPackage "Microsoft.Office.Sway" | Remove-AppxPackage
+# Get-AppxPackage "Microsoft.Messaging" | Remove-AppxPackage
+# Get-AppxPackage "Microsoft.CommsPhone" | Remove-AppxPackage
+# Get-AppxPackage "9E2F88E3.Twitter" | Remove-AppxPackage
 Get-AppxPackage "king.com.CandyCrushSodaSaga" | Remove-AppxPackage
  
 # Install default Microsoft applications
@@ -511,15 +511,15 @@ Get-AppxPackage "king.com.CandyCrushSodaSaga" | Remove-AppxPackage
 # Remove-Item -Path C:\Mnt -Recurse
  
 # Uninstall Windows Media Player
-Write-Host "Uninstalling Windows Media Player..."
-dism /online /Disable-Feature /FeatureName:MediaPlayback /Quiet /NoRestart
+# Write-Host "Uninstalling Windows Media Player..."
+# dism /online /Disable-Feature /FeatureName:MediaPlayback /Quiet /NoRestart
  
 # Install Windows Media Player
 # dism /online /Enable-Feature /FeatureName:MediaPlayback /Quiet /NoRestart
  
 # Uninstall Work Folders Client
-Write-Host "Uninstalling Work Folders Client..."
-dism /online /Disable-Feature /FeatureName:WorkFolders-Client /Quiet /NoRestart
+# Write-Host "Uninstalling Work Folders Client..."
+# dism /online /Disable-Feature /FeatureName:WorkFolders-Client /Quiet /NoRestart
  
 # Install Work Folders Client
 # dism /online /Enable-Feature /FeatureName:WorkFolders-Client /Quiet /NoRestart
