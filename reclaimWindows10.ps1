@@ -264,7 +264,7 @@ Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\Personalizatio
 # Enable Autorun
 # Remove-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" -Name "NoDriveTypeAutoRun"
  
-Disable Sticky keys prompt
+#Disable Sticky keys prompt
 Write-Host "Disabling Sticky keys prompt..." 
 Set-ItemProperty -Path "HKCU:\Control Panel\Accessibility\StickyKeys" -Name "Flags" -Type String -Value "506"
  
