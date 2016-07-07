@@ -468,7 +468,7 @@ Get-AppxPackage "Microsoft.MicrosoftOfficeHub" | Remove-AppxPackage
 # Get-AppxPackage "Microsoft.WindowsMaps" | Remove-AppxPackage
 Get-AppxPackage "Microsoft.WindowsPhone" | Remove-AppxPackage
 # Get-AppxPackage "Microsoft.WindowsSoundRecorder" | Remove-AppxPackage
-Get-AppxPackage "Microsoft.XboxApp" | Remove-AppxPackage
+# Get-AppxPackage "Microsoft.XboxApp" | Remove-AppxPackage
 # Get-AppxPackage "Microsoft.ZuneMusic" | Remove-AppxPackage
 # Get-AppxPackage "Microsoft.ZuneVideo" | Remove-AppxPackage
 # Get-AppxPackage "Microsoft.AppConnector" | Remove-AppxPackage
@@ -476,7 +476,7 @@ Get-AppxPackage "Microsoft.XboxApp" | Remove-AppxPackage
 # Get-AppxPackage "Microsoft.Office.Sway" | Remove-AppxPackage
 # Get-AppxPackage "Microsoft.Messaging" | Remove-AppxPackage
 # Get-AppxPackage "Microsoft.CommsPhone" | Remove-AppxPackage
-# Get-AppxPackage "9E2F88E3.Twitter" | Remove-AppxPackage
+Get-AppxPackage "9E2F88E3.Twitter" | Remove-AppxPackage
 Get-AppxPackage "king.com.CandyCrushSodaSaga" | Remove-AppxPackage
  
 # Install default Microsoft applications
