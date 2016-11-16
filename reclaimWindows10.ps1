@@ -11,7 +11,7 @@
 
 # NOTE: READ THIS SCRIPT CAREFULLY BEFORE RUNNING IT. ADJUST COMMENTS AS APPROPRIATE.
 # This script will reboot your machine when completed.
-# If you're setting up a new machine, also check out http://ninite.com and/or http://chocolatey.org
+# If you're setting up a new machine, also check out http://ninite.com (or http://chocolatey.org for devs)
 ##########
  
 # Ask for elevated permissions if required
