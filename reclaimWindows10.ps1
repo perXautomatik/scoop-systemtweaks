@@ -3,6 +3,8 @@
 # Primary Author: Disassembler <disassembler@dasm.cz>
 # Original Version: 1.4, 2016-01-16
 # Tweaked based on personal preferences for @alirobe 2016-03-23 - v1.4.1
+# For the latest version of dasm's script, please go here: https://github.com/Disassembler0/Win10-Initial-Setup-Script/blob/master/Win10.ps1
+# (@disassember0 has different defaults)
 # NOTE: MAKE SURE YOU READ THIS SCRIPT CAREFULLY BEFORE RUNNING IT + ADJUST COMMENTING AS APPROPRIATE
 #       This script will reboot your machine when completed.
 ##########
