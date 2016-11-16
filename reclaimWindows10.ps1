@@ -1,13 +1,16 @@
 ##########
-# Tweaked Win10 Initial Setup Script
-# Primary Author: Disassembler <disassembler@dasm.cz>
-# Original Version: 1.4, 2016-01-16
-# dasm's script: https://github.com/Disassembler0/Win10-Initial-Setup-Script/
-# (primary difference: his script turns off much more stuff by default, including security features)
+# Win10 Initial Setup Script
+# Author: Disassembler <disassembler@dasm.cz>
+# Version: 1.7, 2016-08-15
 
+# dasm's script: https://github.com/Disassembler0/Win10-Initial-Setup-Script/
+
+# THIS IS A PERSONALIZED VERSION
+# This script leaves more MS defaults on, including MS security features.
 # Tweaked based on personal preferences for @alirobe 2016-11-16 - v1.7.1
-# NOTE: MAKE SURE YOU READ THIS SCRIPT CAREFULLY BEFORE RUNNING IT + ADJUST COMMENTING AS APPROPRIATE
-#       This script will reboot your machine when completed.
+
+# NOTE: MAKEREAD THIS SCRIPT CAREFULLY BEFORE RUNNING IT + ADJUST COMMENTS AS APPROPRIATE
+# This script will reboot your machine when completed.
 ##########
  
 # Ask for elevated permissions if required
