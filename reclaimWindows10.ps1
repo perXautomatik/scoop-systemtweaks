@@ -9,8 +9,9 @@
 # This script leaves more MS defaults on, including MS security features.
 # Tweaked based on personal preferences for @alirobe 2016-11-16 - v1.7.1
 
-# NOTE: MAKEREAD THIS SCRIPT CAREFULLY BEFORE RUNNING IT + ADJUST COMMENTS AS APPROPRIATE
+# NOTE: READ THIS SCRIPT CAREFULLY BEFORE RUNNING IT. ADJUST COMMENTS AS APPROPRIATE.
 # This script will reboot your machine when completed.
+# If you're setting up a new machine, also check out http://ninite.com and/or http://chocolatey.org
 ##########
  
 # Ask for elevated permissions if required
