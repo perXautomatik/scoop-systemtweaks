@@ -517,7 +517,6 @@ Write-Host "Uninstalling default bloatware..."
 # Get-AppxPackage "Microsoft.CommsPhone" | Remove-AppxPackage
 Get-AppxPackage "9E2F88E3.Twitter" | Remove-AppxPackage
 Get-AppxPackage "king.com.CandyCrushSodaSaga" | Remove-AppxPackage
-Get-AppxPackage "king.com.CandyCrushSodaSaga" | Remove-AppxPackage
 Get-AppxPackage "4DF9E0F8.Netflix" | Remove-AppxPackage
 # Get-AppxPackage "Drawboard.DrawboardPDF" | Remove-AppxPackage
 # Get-AppxPackage "Microsoft.MicrosoftStickyNotes" | Remove-AppxPackage
