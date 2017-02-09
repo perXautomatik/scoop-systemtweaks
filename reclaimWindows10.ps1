@@ -639,6 +639,9 @@ Set-ItemProperty -Path "HKCR:\Applications\photoviewer.dll\shell\open\DropTarget
 # Disable F8 boot menu options
 # bcdedit /set `{current`} bootmenupolicy Standard | Out-Null
 
+# Install Powershell man pages locally (low priority, uses bandwidth)
+Update-Help
+
 ##########
 # Restart
 ##########
