@@ -7,9 +7,12 @@
 # Tweaked Source: https://gist.github.com/alirobe/7f3b34ad89a159e6daa1/
 # Tweak difference:
 #
-#    @alirobe's version is about removing telemetry & 'smart' features, while retaining
-#    win10 defaults where possible. Idea is to be suitable for IT desktop rollout - minimal changes.
-#    The dasm script is more aggressively power-user focussed.
+#    @alirobe's version is about removing telemetry & 'smart' features, 
+#    while retaining win10 defaults where possible. 
+#    Idea is to be suitable for a desktop rollout - minimal changes + user safety.
+#
+#    The dasm script is more aggressively power-user focused.
+#    And may turn off important safety features for (very good) privacy reasons.
 #
 #    Note from author: Never run scripts without reading them!
 #
