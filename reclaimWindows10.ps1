@@ -15,7 +15,7 @@
 #    The dasm script is more aggressively power-user focused.
 #    And may turn off important safety features for (very good) privacy reasons.
 #
-#    Note from author: Never run scripts without reading them!
+#    Note from author: Never run scripts without reading them & understanding what they do.
 #
 ##########
 
