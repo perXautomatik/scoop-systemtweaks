@@ -7,7 +7,7 @@
 # Tweaked Source: https://gist.github.com/alirobe/7f3b34ad89a159e6daa1/
 # Tweak difference:
 #
-#    @alirobe's version is a subset focused on safely disabling telemetry, 'smart' features, and bloat ...
+#    @alirobe's version is a subset focused on safely disabling telemetry, 'smart' features, and 3rd party bloat ...
 #    ... while retaining win10 defaults + security features. Aim to be suitable for end-user rollout.
 #
 #    If you're a power user looking to tweak your machine check out the @Disassembler0 script instead:
