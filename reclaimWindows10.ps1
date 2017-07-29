@@ -30,7 +30,7 @@ $tweaks = @(
 	"DisableErrorReporting",        # "EnableErrorReporting",
 	"RestrictUpdateP2P",            # "UnrestrictUpdateP2P",
 	"DisableAutoLogger",            # "EnableAutoLogger",
-	"DisableDiagTrack",             # "EnableDiagTrack",
+	#"DisableDiagTrack",             # "EnableDiagTrack",
 	"DisableWAPPush",               # "EnableWAPPush",
 
 	### Service Tweaks ###
