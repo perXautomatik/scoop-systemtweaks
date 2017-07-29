@@ -12,8 +12,7 @@
 #    Idea is to be suitable for a desktop rollout.
 #    It Makes minimal changes while maintaining safety.
 #
-#    The dasm script is more aggressively power-user focused.
-#    And may turn off important safety features for (very good) privacy reasons.
+#    If you're a power user, check out the @Disassembler0 script! :)
 #
 #    Note from author: Never run scripts without reading them & understanding what they do.
 #
