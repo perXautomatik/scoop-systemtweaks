@@ -10,7 +10,7 @@
 #    @alirobe's version is about removing telemetry & 'smart' features, 
 #    while retaining win10 defaults where possible. 
 #    Idea is to be suitable for a desktop rollout.
-#    It Makes minimal changes while maintaining safety.
+#    It makes minimal changes & tries to maintain safety.
 #
 #    If you're a power user, check out the @Disassembler0 script! :)
 #
