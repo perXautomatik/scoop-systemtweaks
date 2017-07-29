@@ -95,7 +95,7 @@ $tweaks = @(
 	# "DisableShutdownTracker",     # "EnableShutdownTracker",
 	# "DisablePasswordPolicy",      # "EnablePasswordPolicy",
 	# "DisableCtrlAltDelLogin",     # "EnableCtrlAltDelLogin",
-	"DisableIEEnhancedSecurity",  # "EnableIEEnhancedSecurity",
+	# "DisableIEEnhancedSecurity",  # "EnableIEEnhancedSecurity",
 
 	### Auxiliary Functions ###
 	"WaitForKey",
