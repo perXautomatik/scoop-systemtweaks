@@ -11,7 +11,7 @@
 #    ... while retaining win10 defaults + security features. Aim to be suitable for end-user rollout.
 #
 #    If you're a power user looking to tweak your machine, or doing larger roll-out.. 
-#    fork the @Disassembler0 script instead. It'll be more up-to-date than mine:
+#    Use the @Disassembler0 script instead. It'll probably be more up-to-date than mine:
 #    https://github.com/Disassembler0/Win10-Initial-Setup-Script
 # 
 #    Note from author: Never run scripts without reading them & understanding what they do.
