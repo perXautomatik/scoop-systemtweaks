@@ -58,7 +58,7 @@ $tweaks = @(
 	# "DisableLockScreen",            # "EnableLockScreen",
 	# "DisableLockScreenRS1",       # "EnableLockScreenRS1",
 	# "DisableStickyKeys",            # "EnableStickyKeys",
-	"ShowTaskManagerDetails"        # "HideTaskManagerDetails",
+	# "ShowTaskManagerDetails"        # "HideTaskManagerDetails",
 	"ShowFileOperationsDetails",    # "HideFileOperationsDetails",
 	# "HideTaskbarSearchBox",         # "ShowTaskbarSearchBox",
 	# "HideTaskView",                 # "ShowTaskView",
