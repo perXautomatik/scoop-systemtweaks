@@ -84,7 +84,7 @@ $tweaks = @(
 	### Application Tweaks ###
 	# "DisableOneDrive",              # "EnableOneDrive",
 	# "UninstallOneDrive",            # "InstallOneDrive",
-	# NOTE I HAVE TEMP MODIFIED UNINSTALL BLOATWARE TO REFER ONLY TO 3RD PARTY BLOATWARE. THIS SHOULD IDEALLY BE 2 FUNCTIONS, WILL SUBMIT PR -- @alirobe
+	# NOTE I HAVE TEMP MODIFIED UNINSTALL BLOATWARE TO REFER ONLY TO 3RD PARTY BLOATWARE. THIS SHOULD IDEALLY BE 2 FUNCTIONS. (Pull Req https://github.com/Disassembler0/Win10-Initial-Setup-Script/pull/12) -- @alirobe
 	"UninstallBloatware",           # "InstallBloatware",
 	# "UninstallWindowsStore",      # "InstallWindowsStore",
 	# "DisableConsumerApps",          # "EnableConsumerApps",
