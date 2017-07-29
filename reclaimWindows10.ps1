@@ -9,7 +9,8 @@
 #
 #    @alirobe's version is about removing telemetry & 'smart' features, 
 #    while retaining win10 defaults where possible. 
-#    Idea is to be suitable for a desktop rollout - minimal changes + user safety.
+#    Idea is to be suitable for a desktop rollout.
+#    It Makes minimal changes while maintaining safety.
 #
 #    The dasm script is more aggressively power-user focused.
 #    And may turn off important safety features for (very good) privacy reasons.
