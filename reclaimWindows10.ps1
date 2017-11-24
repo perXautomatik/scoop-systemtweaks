@@ -1,8 +1,21 @@
 ##########
-# Win10 / WinServer2016 Initial Setup Script
-# Author: Disassembler <disassembler@dasm.cz>
-# Version: v2.10, 2017-11-09
-# Source: https://github.com/Disassembler0/Win10-Initial-Setup-Script
+# Tweaked Win10 Initial Setup Script
+# Primary Author: Disassembler <disassembler@dasm.cz>
+# Modified by: alirobe <alirobe@alirobe.com> based on my personal preferences.
+# Version: 2.10.1, 2017-11-25
+# Primary Author Source: https://github.com/Disassembler0/Win10-Initial-Setup-Script
+# Tweaked Source: https://gist.github.com/alirobe/7f3b34ad89a159e6daa1/
+# Tweak difference:
+#
+#    @alirobe's version is a subset focused on safely disabling telemetry, 'smart' features, and 3rd party bloat ...
+#    ... while retaining win10 defaults + security features. Aim to be suitable for end-user rollout.
+#
+#    If you're a power user looking to tweak your machine, or doing larger roll-out.. 
+#    Use the @Disassembler0 script instead. It'll probably be more up-to-date than mine:
+#    https://github.com/Disassembler0/Win10-Initial-Setup-Script
+# 
+#    Note from author: Never run scripts without reading them & understanding what they do.
+#
 ##########
 
 # Default preset
