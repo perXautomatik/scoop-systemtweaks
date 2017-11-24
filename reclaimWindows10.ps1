@@ -13,7 +13,7 @@ $tweaks = @(
 	### Privacy Settings ###
 	"DisableTelemetry",             # "EnableTelemetry",
 	"DisableWiFiSense",             # "EnableWiFiSense",
-	#"DisableSmartScreen",         # "EnableSmartScreen",
+	# "DisableSmartScreen",         # "EnableSmartScreen",
 	"DisableWebSearch",             # "EnableWebSearch",
 	"DisableAppSuggestions",        # "EnableAppSuggestions",
 	"DisableBackgroundApps",        # "EnableBackgroundApps",
@@ -32,8 +32,8 @@ $tweaks = @(
 	### Service Tweaks ###
 	# "SetUACLow",                  # "SetUACHigh",
 	# "EnableSharingMappedDrives",  # "DisableSharingMappedDrives",
-	"DisableAdminShares",           # "EnableAdminShares",
-	"DisableSMB1",                # "EnableSMB1",
+	# "DisableAdminShares",           # "EnableAdminShares",
+	"DisableSMB1",                  # "EnableSMB1",
 	"SetCurrentNetworkPrivate",     # "SetCurrentNetworkPublic",
 	# "SetUnknownNetworksPrivate",  # "SetUnknownNetworksPublic",
 	# "EnableCtrldFolderAccess",      # "DisableCtrldFolderAccess",
@@ -44,7 +44,7 @@ $tweaks = @(
 	# "DisableUpdateDriver",        # "EnableUpdateDriver",
 	"DisableUpdateRestart",         # "EnableUpdateRestart",
 	"DisableHomeGroups",            # "EnableHomeGroups",
-	"DisableSharedExperiences",     # "EnableSharedExperiences",
+	# "DisableSharedExperiences",     # "EnableSharedExperiences",
 	# "DisableRemoteAssistance",      # "EnableRemoteAssistance",
 	# "EnableRemoteDesktop",          # "DisableRemoteDesktop",
 	"DisableAutoplay",              # "EnableAutoplay",
