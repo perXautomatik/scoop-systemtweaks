@@ -7,7 +7,7 @@
 # Tweaked Source: https://gist.github.com/alirobe/7f3b34ad89a159e6daa1/
 # Tweak difference:
 #
-#    @alirobe's version is a subset focused on safely disabling telemetry, 'smart' features, and 3rd party bloat ...
+#    @alirobe's version is a subset focused on safely disabling telemetry, some 'smart' features and 3rd party bloat ...
 #    ... while retaining win10 defaults + security features. Aim to be suitable for end-user rollout.
 #
 #    If you're a power user looking to tweak your machinea, or doing larger roll-out.. 
@@ -27,12 +27,12 @@ $tweaks = @(
 	"DisableTelemetry",             # "EnableTelemetry",
 	"DisableWiFiSense",             # "EnableWiFiSense",
 	# "DisableSmartScreen",         # "EnableSmartScreen",
-	"DisableWebSearch",             # "EnableWebSearch",
+	# "DisableWebSearch",             # "EnableWebSearch",
 	"DisableAppSuggestions",        # "EnableAppSuggestions",
-	"DisableBackgroundApps",        # "EnableBackgroundApps",
-	"DisableLockScreenSpotlight",   # "EnableLockScreenSpotlight",
-	"DisableLocationTracking",      # "EnableLocationTracking",
-	"DisableMapUpdates",            # "EnableMapUpdates",
+	# "DisableBackgroundApps",        # "EnableBackgroundApps",
+	# "DisableLockScreenSpotlight",   # "EnableLockScreenSpotlight",
+	# "DisableLocationTracking",      # "EnableLocationTracking",
+	# "DisableMapUpdates",            # "EnableMapUpdates",
 	"DisableFeedback",              # "EnableFeedback",
 	"DisableAdvertisingID",         # "EnableAdvertisingID",
 	"DisableCortana",               # "EnableCortana",
@@ -109,7 +109,7 @@ $tweaks = @(
 	# "HideVideosFromThisPC",         # "ShowVideosInThisPC",
 	# "HideVideosFromExplorer",       # "ShowVideosInExplorer",
 	# "Hide3DObjectsFromThisPC",      # "Show3DObjectsInThisPC",
-        # "Hide3DObjectsFromExplorer",    # "Show3DObjectsInExplorer",
+        "Hide3DObjectsFromExplorer",    # "Show3DObjectsInExplorer",
 	# "SetVisualFXPerformance",       # "SetVisualFXAppearance",
 	# "DisableThumbnails",          # "EnableThumbnails",
 	# "DisableThumbsDB",              # "EnableThumbsDB",
