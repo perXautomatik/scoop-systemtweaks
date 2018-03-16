@@ -48,7 +48,7 @@ $tweaks = @(
 	# "DisableAdminShares",           # "EnableAdminShares",
 	"DisableSMB1",                  # "EnableSMB1",
 	"SetCurrentNetworkPrivate",     # "SetCurrentNetworkPublic",
-    # "SetUnknownNetworksPrivate",  # "SetUnknownNetworksPublic",
+        # "SetUnknownNetworksPrivate",  # "SetUnknownNetworksPublic",
 	# "DisableNetDevicesAutoInst",  # "EnableNetDevicesAutoInst",
 	# "EnableCtrldFolderAccess",      # "DisableCtrldFolderAccess",
 	# "DisableFirewall",            # "EnableFirewall",
@@ -96,7 +96,7 @@ $tweaks = @(
 	"SetExplorerThisPC",            # "SetExplorerQuickAccess",
 	"ShowThisPCOnDesktop",          # "HideThisPCFromDesktop",
 	# "ShowUserFolderOnDesktop",    # "HideUserFolderFromDesktop",
-    # "HideDesktopFromThisPC",        # "ShowDesktopInThisPC",
+        # "HideDesktopFromThisPC",        # "ShowDesktopInThisPC",
 	# "HideDesktopFromExplorer",      # "ShowDesktopInExplorer",
 	# "HideDocumentsFromThisPC",      # "ShowDocumentsInThisPC",
 	# "HideDocumentsFromExplorer",    # "ShowDocumentsInExplorer",
@@ -109,7 +109,7 @@ $tweaks = @(
 	# "HideVideosFromThisPC",         # "ShowVideosInThisPC",
 	# "HideVideosFromExplorer",       # "ShowVideosInExplorer",
 	# "Hide3DObjectsFromThisPC",      # "Show3DObjectsInThisPC",
-    # "Hide3DObjectsFromExplorer",    # "Show3DObjectsInExplorer",
+        # "Hide3DObjectsFromExplorer",    # "Show3DObjectsInExplorer",
 	# "SetVisualFXPerformance",       # "SetVisualFXAppearance",
 	# "DisableThumbnails",          # "EnableThumbnails",
 	# "DisableThumbsDB",              # "EnableThumbsDB",
@@ -143,7 +143,7 @@ $tweaks = @(
 	# "DisableCtrlAltDelLogin",     # "EnableCtrlAltDelLogin",
 	# "DisableIEEnhancedSecurity",  # "EnableIEEnhancedSecurity",
 
-    ### Unpinning ###
+        ### Unpinning ###
 	# "UnpinStartMenuTiles",
 	# "UnpinTaskbarIcons",
 
