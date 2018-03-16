@@ -2,7 +2,7 @@
 # Tweaked Win10 Initial Setup Script
 # Primary Author: Disassembler <disassembler@dasm.cz>
 # Modified by: alirobe <alirobe@alirobe.com> based on my personal preferences.
-# Version: 2.10.1, 2017-11-25
+# Version: 2.12.1, 2018-03-15
 # Primary Author Source: https://github.com/Disassembler0/Win10-Initial-Setup-Script
 # Tweaked Source: https://gist.github.com/alirobe/7f3b34ad89a159e6daa1/
 # Tweak difference:
