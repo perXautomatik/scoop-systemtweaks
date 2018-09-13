@@ -2,7 +2,7 @@
 # Tweaked Win10 Initial Setup Script
 # Primary Author: Disassembler <disassembler@dasm.cz>
 # Modified by: alirobe <alirobe@alirobe.com> based on my personal preferences.
-# Version: 2.20.1, 2018-07-23
+# Version: 2.20.2, 2018-09-14
 # Primary Author Source: https://github.com/Disassembler0/Win10-Initial-Setup-Script
 # Tweaked Source: https://gist.github.com/alirobe/7f3b34ad89a159e6daa1/
 # Tweak difference:
@@ -56,7 +56,7 @@ $tweaks = @(
 	# "DisableDefender",            # "EnableDefender",
 	# "DisableDefenderCloud",       # "EnableDefenderCloud",
 	"EnableF8BootMenu",             # "DisableF8BootMenu",
-	"SetDEPOptOut",                 # "SetDEPOptIn",
+	#"SetDEPOptOut",                 # "SetDEPOptIn",
 	# "EnableCIMemoryIntegrity",    # "DisableCIMemoryIntegrity",
 	#"DisableScriptHost",            # "EnableScriptHost",
 	#"EnableDotNetStrongCrypto",     # "DisableDotNetStrongCrypto",
@@ -66,7 +66,7 @@ $tweaks = @(
 	# "DisableUpdateMSRT",          # "EnableUpdateMSRT",
 	# "DisableUpdateDriver",        # "EnableUpdateDriver",
 	"DisableUpdateRestart",         # "EnableUpdateRestart",
-	# "DisableHomeGroups",          # "EnableHomeGroups",
+	"DisableHomeGroups",          # "EnableHomeGroups",
 	# "DisableSharedExperiences",     # "EnableSharedExperiences",
 	# "DisableRemoteAssistance",      # "EnableRemoteAssistance",
 	# "EnableRemoteDesktop",          # "DisableRemoteDesktop",
