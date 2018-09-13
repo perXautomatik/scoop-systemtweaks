@@ -164,7 +164,7 @@ $tweaks = @(
 
 	### Auxiliary Functions ###
 	"WaitForKey"
-	#"Restart"
+	"Restart"
 )
 
 
