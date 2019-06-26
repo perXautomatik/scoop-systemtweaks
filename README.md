@@ -1,8 +1,6 @@
-# scoop-systemtweaks
+# Installation
 
-Scoop bucket for scripts that tweaks system settings
-
-How do I install these manifests?
----------------------------------
-
-To add this bucket, run `scoop bucket add scoop-systemtweaks https://github.com/issaclin32/scoop-systemtweaks`. To install, do `scoop install <package>`.
+In PowerShell console execute
+```
+iwr -useb 'http://tinyurl.com/sboot-install' | iex
+```
