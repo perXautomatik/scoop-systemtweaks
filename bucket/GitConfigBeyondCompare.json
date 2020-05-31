@@ -1,0 +1,21 @@
+﻿{
+    "$schema": "https://raw.githubusercontent.com/lukesampson/scoop/master/schema.json",
+<<<<<<<< HEAD:bucket/ClientBasePackages.json
+    "version": "1.0.006",
+    "url": [
+        "https://raw.githubusercontent.com/MarkMichaelis/ScoopBucket/master/bucket/Utils.ps1",
+        "https://raw.githubusercontent.com/MarkMichaelis/ScoopBucket/master/bucket/OSBasePackages.ps1"
+    ],
+    "installer": {
+        "file": "OSBasePackages.ps1"
+========
+    "version": "1.02.000",
+    "url": [
+        "https://raw.githubusercontent.com/MarkMichaelis/ScoopBucket/master/bucket/Utils.ps1",
+        "https://raw.githubusercontent.com/MarkMichaelis/ScoopBucket/master/bucket/GitConfigBeyondCompare.ps1"
+    ],
+    "installer": {
+        "file": "GitConfigBeyondCompare.ps1"
+>>>>>>>> 882d923 (Renamed GitIntegrationWithBeyondCompare=>GitConfigBeyondCompare):bucket/GitConfigBeyondCompare.json
+    }
+}
