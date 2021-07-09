@@ -1,10 +1,7 @@
-# My super awesome Windows 10 🐱‍🐉
+atempting windows autodeployment
 
-> The system setup that makes my computing experience awesome
-
+credit the autor:
 [![say thanks badge]( https://img.shields.io/badge/say-thanks-ff69b4)](https://ko-fi.com/nickseagull)
-
-![desktop](https://i.imgur.com/3Qf25H8.png)
 
 # Table of Contents
 
@@ -34,33 +31,10 @@ The apps listed in this repo follow the following convention:
 - 👜 The app needs to be installed manually from the Windows store
 - ⚠ The app needs to be installed manually from its website
 
-## Productivity
-
-**⚠ [spacedesk](https://spacedesk.net/) - Use my Surface Pro 6 as second screen**
-
-![not the prettiest screen](https://i.imgur.com/WPUt8YX.jpg)
-
-- I use a Surface Pro 6 as my secondary system that acts as a laptop/tablet
-- In some moments, I require a second screen, so spacedesk allows me to use it as a screen when I'm working at my desktop
-
 **✅ [AutoHotKey](https://www.autohotkey.com/) - General automation**
 
 - AHK provides a scripting language that allows you to automate most of the things in Windows. From remapping keys, to moving the mouse, you can automate everything.
 - I have used AHK extensively in the past and I even created bots for online games with it (yes, I was THAT guy, but not always). You can imagine the power of this tool now.
-
-**✅ [Notion](https://www.notion.so/) - All organizer**
-
-- Notion is a software masterpiece, it makes organization seem very simple
-- Replaces a lot of tools like Evernote, Google Sheets, etc..
-- I use it mainly to organize my personal stuff
-
-![notion screenshot](screenshots/notion.png)
-
-**⚠ [1password](https://1password.com/) - Password management**
-
-- Having the same password for all the sites is a very bad practice. I learnt this once a friend's Steam account got hacked, and with it, his email, Facebook, and everything.
-- Thanks to passwords managers like this one, I don't even need to remember my passwords.
-- For some reason, `chocolatey` doesn't install this properly, and it always fails.
 
 **⚠ [Espanso](https://espanso.org/) - Text expansions**
 
@@ -74,10 +48,6 @@ The apps listed in this repo follow the following convention:
 
 ![simple mind screenshot](screenshots/simplemind.png)
 
-**✅ [Transmission]( https://transmissionbt.com/ ) - Torrent client**
-
-* I use this client to share files from time to time, very minimal one, which I like.
-
 **⚠ [Pennywise](https://github.com/kamranahmedse/pennywise) - Floating windows**
 
 - Very useful for watching videos while doing other stuff
@@ -86,13 +56,6 @@ The apps listed in this repo follow the following convention:
 ## Coding
 
 **✅ [Visual Studio Code](https://code.visualstudio.com/) - My main code editor**
-
-**✅ [Microsoft Terminal](https://www.microsoft.com/store/productId/9N0DX20HK701) - Terminal emulator**
-
-**👜 [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) - Run Linux apps natively on Windows**
-
-* Not really an app, but it needs to be installed, so it goes on this list. The chocolatey package didn't work for me, so I have to install it manually.
-* WSL allows running Linux apps on Windows, interoperating with your current files, etc... So it is a much better experience than a Virtual Box, or alike.
 
 **✅ [Docker Desktop]( https://www.docker.com/products/docker-desktop ) - Containerization of apps**
 
@@ -104,23 +67,6 @@ The apps listed in this repo follow the following convention:
 * If some fonts are not being rendered, it is because in VcXsrv you have to:
   * Install them _inside_ WSL with your regular installation method (it probably includes using `fc-cache`)
   * Download them for Windows, and add them to the `C:\Program Files\VcXsrv\fonts` directory
-
-## Social
-
-**✅ [Slack](https://slack.com) - Work chat**
-
-- I use Slack mainly for work, although I also chat from time to time in the Functional Programming one
-
-**✅ Discord - Leisure chat**
-
-* I like playing online games, and from time to time, I socialize in them, meaning that I have to talk to people, so I use Discord
-* On the other hand, it also allows me to talk with people from some developer communities, like AutoHotKey.
-
-![discord screenshot](screenshots/discord.png)
-
-**👜 [Unigram](https://github.com/UnigramDev/Unigram) - A Telegram client optimized for Windows 10**
-
-- The regular Telegram client has some issues with DPI scaling, meaning that if I move the window from my 1080p monitor to the Surface one, it'll stay with the same resolution. This doesn't happen with Unigram, and I get integrated notifications.
 
 ## Music
 
