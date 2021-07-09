@@ -5,8 +5,9 @@ prinstall:
   coding
     intiellij datagrip
   entertainment; 
+    mtgArena
     steam, atempt steam portable (keep game files on nas, then let windows cache files when using)
-      (run steam as 
+      (run steam as service?)
   browser 
     opera gx.
   explorer extensions
@@ -15,6 +16,8 @@ prinstall:
     tortousGit
   bcompare
   prolasso
+  whatpulse
+
   
   
  import 
