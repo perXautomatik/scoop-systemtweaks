@@ -1,6 +1,6 @@
 atempting windows autodeployment
 
-credit the autor:
+credit the author: nickseagull
 [![say thanks badge]( https://img.shields.io/badge/say-thanks-ff69b4)](https://ko-fi.com/nickseagull)
 
 # Table of Contents
