@@ -22,5 +22,18 @@ prinstall:
   
   import gisted regedit changes to customize contextmenue
   import runhistory.. somehowe (shouldn't be hardcoded)
+  import currated extensionlist for browser.
+
+to figure out
+  how to autostinall extension to browsers..
+  simply running a urllist with xpi files, or find a snazier method
+
   
-  
+to think about
+  what should be harcoded and what should be dynamically updated.
+
+  i think the choclatere list could be a dynamic list for example.
+  the reg changes.
+  the nonconventional programs is another problem though.
+
+  add PathVariables.
