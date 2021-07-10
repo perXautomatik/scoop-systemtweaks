@@ -21,6 +21,7 @@ prinstall:
   
   
  import 
+  set global git preferences
   app settings from gist
   
   import gisted regedit changes to customize contextmenue
