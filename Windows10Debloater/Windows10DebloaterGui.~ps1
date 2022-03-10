@@ -804,8 +804,13 @@ $EnableCortana.Add_Click( {
 $EnableEdgePDFTakeover.Add_Click( Enable-EdgePDF )
 
 $DisableTelemetry.Add_Click( {
-	Protect-Privacy
-
+	$ErrorActionPreference = 'SilentlyContinue'
+	#Disables Windows Feedback Experience
+	Write-Host "Disabling Windows Feedback Experience program"
+	$Advertising = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\AdvertisingInfo"
+	If (Test-Path $Advertising) {
+	    Set-ItemProperty $Advertising Enabled -Value 0
+	}
 
 	#Stops Cortana from being used as part of your Windows Search Function
 	Write-Host "Stopping Cortana from being used as part of your Windows Search Function"
