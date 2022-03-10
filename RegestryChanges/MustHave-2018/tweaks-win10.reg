@@ -1,0 +1,595 @@
+Windows Registry Editor Version 5.00
+
+;Remove 'Give access to' Context Menu in Windows 10
+[-HKEY_CLASSES_ROOT\*\shellex\ContextMenuHandlers\Sharing]
+[-HKEY_CLASSES_ROOT\*\shellex\ContextMenuHandlers\ModernSharing]
+[-HKEY_CLASSES_ROOT\Directory\Background\shellex\ContextMenuHandlers\Sharing]
+[-HKEY_CLASSES_ROOT\Directory\shellex\ContextMenuHandlers\Sharing]
+[-HKEY_CLASSES_ROOT\Directory\shellex\CopyHookHandlers\Sharing]
+[-HKEY_CLASSES_ROOT\Directory\shellex\PropertySheetHandlers\Sharing]
+[-HKEY_CLASSES_ROOT\Drive\shellex\ContextMenuHandlers\Sharing]
+[-HKEY_CLASSES_ROOT\Drive\shellex\PropertySheetHandlers\Sharing]
+[-HKEY_CLASSES_ROOT\LibraryFolder\background\shellex\ContextMenuHandlers\Sharing]
+[-HKEY_CLASSES_ROOT\UserLibraryFolder\shellex\ContextMenuHandlers\Sharing]
+[HKEY_CURRENT_USER\Control Panel]
+"EnableShareSettings"=dword:00000000
+
+;Enable Shut Down without Having to Log On
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"shutdownwithoutlogon"=dword:00000001
+
+;SpeedUp logon
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Serialize]
+"StartupDelayInMSec"=dword:00000000
+
+;Disable tablet mode
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ImmersiveShell]
+"SignInMode"=dword:00000002
+
+;disable system restore
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SystemRestore]
+"DisableSR"=dword:1
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SR]
+"Start"=dword:4
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SystemRestore]
+"DiskPercent"=dword:0
+"RPGlobalInterval"=dword:0
+"RPLifeInterval"=dword:0
+"RPSessionInterval"=dword:0
+"DisableConfig"=dword:1
+
+; Windows Media Player Skip EULA + First Time usage dialog
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MediaPlayer\Preferences]
+"AcceptedEULA"=dword:00000001
+"FirstTime"=dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsMediaPlayer]
+"GroupPrivacyAcceptance"=dword:00000001
+
+;Disable Thumbsdb on network drives
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer]
+"DisableThumbsDBOnNetworkFolders"=dword:00000001
+
+;Turn On Share Across Devices for Apps from My devices
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CDP]
+"CdpSessionUserAuthzPolicy"=dword:00000000
+"NearShareChannelUserAuthzPolicy"=dword:00000000
+"RomeSdkChannelUserAuthzPolicy"=dword:00000000
+
+;Remove-Windows-Defender-To-Folder-Context-Menu
+[-HKEY_CLASSES_ROOT\Folder\shell\WindowsDefender]
+[-HKEY_CLASSES_ROOT\Folder\shell\WindowsDefender\Command]
+
+;Allow Windows Updates for other products (e.g. Microsoft Office)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\WindowsUpdate\Services\7971f918-a847-4430-9279-4a52d1efe18d]
+"RegisteredWithAU"=dword:00000001
+
+;Disable Windows Feedback
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Siuf\Rules]
+"NumberOfSIUFInPeriod"=dword:00000000
+"PeriodInNanoSeconds"=dword:00000000
+
+; Don't Replace Command Prompt with Windows PowerShell On the WinX Menu 
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"DontUsePowerShellOnWinX"=dword:00000001
+
+;Combine buttons when Taskbar is full only
+"TaskbarGlomLevel"=dword:00000001
+
+;disable narrator
+[HKEY_CURRENT_USER\Software\Microsoft\Narrator\NoRoam]
+"WinEnterLaunchEnabled"=dword:00000000
+
+;disable accessibility options
+[HKEY_CURRENT_USER\Control Panel\Accessibility\ToggleKeys]
+"Flags"="58"
+[HKEY_CURRENT_USER\Control Panel\Accessibility\StickyKeys]
+"Flags"="506"
+
+;Disable Auto run
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers]
+"DisableAutoplay"=dword:00000001
+
+
+;Unnecessarily writing on SSD will shorten the lifetime
+; https://translate.google.com/translate?hl=en&sl=ja&u=http://blog.livedoor.jp/nichepcgamer/archives/1071061265.html&prev=search
+; 80000000 → update effective / access date and time 
+; 80000002 → update valid / access date / time (default value) 
+; 80000003 → Do not update invalid / access date / time (default value) 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
+"NtfsDisableLastAccessUpdate"=dword:80000001
+
+;Register and unregister dll and ocx files context menus
+[HKEY_CLASSES_ROOT\dllfile\Shell]
+[HKEY_CLASSES_ROOT\dllfile\Shell\Register]
+[HKEY_CLASSES_ROOT\dllfile\Shell\Register\command]
+[HKEY_CLASSES_ROOT\ocxfile\Shell]
+[HKEY_CLASSES_ROOT\ocxfile\Shell\Register]
+[HKEY_CLASSES_ROOT\ocxfile\Shell\Register\command]
+@="regsvr32.exe \\\"%1\\\""
+[HKEY_CLASSES_ROOT\dllfile\Shell\UnRegister]
+[HKEY_CLASSES_ROOT\dllfile\Shell\UnRegister\command]
+[HKEY_CLASSES_ROOT\ocxfile\Shell\UnRegister]
+[HKEY_CLASSES_ROOT\ocxfile\Shell\UnRegister\command]
+@="regsvr32.exe /u \\\"%1\\\""
+
+; Enable verbose service startup/shutdown messages
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"VerboseStatus"=dword:00000001
+
+; Enable Windows Explorer StatusBar
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\Main]
+"Show_StatusBar"="yes"
+"StatusBarOther"=dword:00000001
+
+;Remove windows store taskbar
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"NoPinningStoreToTaskbar"=dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"NoPinningStoreToTaskbar"=dword:00000001
+
+
+; Office Telemetry/Disable data collection for Telemetry Agent
+[HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common]
+"sendcustomerdata"=dword:00000000
+[HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\Feedback]
+"enabled"=dword:00000000
+"includescreenshot"=dword:00000000
+[HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\Mail]
+"EnableLogging"=dword:00000000
+[HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Word\Options]
+"EnableLogging"=dword:00000000
+[HKEY_CURRENT_USER\Software\Microsoft\Office\Common\ClientTelemetry]
+"DisableTelemetry"=dword:00000001
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Common]
+"qmenable"=dword:00000000
+"updatereliabilitydata"=dword:00000000
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Common\General]
+"shownfirstrunoptin"=dword:00000000
+"skydrivesigninoption"=dword:00000000
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Common\ptwatson]
+"ptwoptin"=dword:00000000
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Firstrun]
+"disablemovie"=dword:00000001
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\OSM]
+"Enablelogging"=dword:00000000
+"EnableUpload"=dword:00000000
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\OSM\preventedapplications]
+"accesssolution"=dword:00000001
+"olksolution"=dword:00000001
+"onenotesolution"=dword:00000001
+"pptsolution"=dword:00000001
+"projectsolution"=dword:00000001
+"publishersolution"=dword:00000001
+"visiosolution"=dword:00000001
+"wdsolution"=dword:00000001
+"xlsolution"=dword:00000001
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\OSM\preventedsolutiontypes]
+"agave"=dword:00000001
+"appaddins"=dword:00000001
+"comaddins"=dword:00000001
+"documentfiles"=dword:00000001
+"templatefiles"=dword:00000001
+
+
+
+;Keep NUMLock always on
+[HKEY_CURRENT_USER\Control Panel\Keyboard]
+"InitialKeyboardIndicators"="2"
+
+;Realtek high-pitch sound crackling fix
+[HKEY_CURRENT_USER\Software\Realtek\Audio\RtkNGUI64\PowerMgnt]
+"Enabled"=dword:00000001
+"DelayTime"=dword:00000003
+"OnlyBattery"=dword:00000000
+"PowerState"=dword:00000000
+
+; Speed up the Shell and the Desktop by increasing (lowering) some timeout's 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"DesktopLivePreviewHoverTime"=dword:00000001
+[HKEY_CURRENT_USER\Control Panel\Mouse]
+"MouseHoverTime"="1"
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"MenuShowDelay"="1"
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"ActiveWndTrackTimeout"=dword:0000000a
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_ShowRun"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoLowDiskSpaceChecks"=dword:00000001
+"LinkResolveIgnoreLinkInfo"=dword:00000001
+"NoResolveSearch"=dword:00000001
+"NoResolveTrack"=dword:00000001
+"NoInternetOpenWith"=dword:00000001
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"AutoEndTasks"="1"
+"HungAppTimeout"="2000"
+"MenuShowDelay"="0"
+"WaitToKillAppTimeout"="3000"
+"LowLevelHooksTimeout"="2000"
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control]
+"WaitToKillServiceTimeout"="2000"
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control]
+"WaitToKillServiceTimeout"="2000"
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control]
+"WaitToKillServiceTimeout"="2000"
+
+;Disable Dump File creation on BSOD
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl]
+"AutoReboot"=dword:00000001
+"CrashDumpEnabled"=dword:00000000
+"Overwrite"=dword:00000001
+"LogEvent"=dword:00000001
+"DumpFile"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,\
+  74,00,25,00,5c,00,4d,00,45,00,4d,00,4f,00,52,00,59,00,2e,00,44,00,4d,00,50,\
+  00,00,00
+"MinidumpDir"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,\
+  00,74,00,25,00,5c,00,4d,00,69,00,6e,00,69,00,64,00,75,00,6d,00,70,00,00,00
+"DumpFilters"=hex(7):64,00,75,00,6d,00,70,00,66,00,76,00,65,00,2e,00,73,00,79,\
+  00,73,00,00,00,00,00
+
+;Add open with Notepad context menu
+[HKEY_CLASSES_ROOT\*\shell\Open with Notepad]
+[HKEY_CLASSES_ROOT\*\shell\Open with Notepad\command]
+@="notepad.exe %1"
+
+
+;Remove Edit with 3D Paint
+; Remove 'Edit with 3D Paint' Context Menu (From Insider Build 15031 onwards)
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.bmp\Shell\3D Edit]
+@="@%SystemRoot%\\system32\\mspaint.exe,-59500"
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.bmp\Shell\3D Edit\command]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,6d,00,73,00,\
+  70,00,61,00,69,00,6e,00,74,00,2e,00,65,00,78,00,65,00,20,00,22,00,25,00,31,\
+  00,22,00,20,00,2f,00,46,00,6f,00,72,00,63,00,65,00,42,00,6f,00,6f,00,74,00,\
+  73,00,74,00,72,00,61,00,70,00,50,00,61,00,69,00,6e,00,74,00,33,00,44,00,00,\
+  00
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.jpeg\Shell\3D Edit]
+@="@%SystemRoot%\\system32\\mspaint.exe,-59500"
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.jpeg\Shell\3D Edit\command]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,6d,00,73,00,\
+  70,00,61,00,69,00,6e,00,74,00,2e,00,65,00,78,00,65,00,20,00,22,00,25,00,31,\
+  00,22,00,20,00,2f,00,46,00,6f,00,72,00,63,00,65,00,42,00,6f,00,6f,00,74,00,\
+  73,00,74,00,72,00,61,00,70,00,50,00,61,00,69,00,6e,00,74,00,33,00,44,00,00,\
+  00
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.jpg\Shell\3D Edit]
+@="@%SystemRoot%\\system32\\mspaint.exe,-59500"
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.jpg\Shell\3D Edit\command]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,6d,00,73,00,\
+  70,00,61,00,69,00,6e,00,74,00,2e,00,65,00,78,00,65,00,20,00,22,00,25,00,31,\
+  00,22,00,20,00,2f,00,46,00,6f,00,72,00,63,00,65,00,42,00,6f,00,6f,00,74,00,\
+  73,00,74,00,72,00,61,00,70,00,50,00,61,00,69,00,6e,00,74,00,33,00,44,00,00,\
+  00
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.jpg\Shell\3D Edit]
+@="@%SystemRoot%\\system32\\mspaint.exe,-59500"
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.jpg\Shell\3D Edit\command]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,6d,00,73,00,\
+  70,00,61,00,69,00,6e,00,74,00,2e,00,65,00,78,00,65,00,20,00,22,00,25,00,31,\
+  00,22,00,20,00,2f,00,46,00,6f,00,72,00,63,00,65,00,42,00,6f,00,6f,00,74,00,\
+  73,00,74,00,72,00,61,00,70,00,50,00,61,00,69,00,6e,00,74,00,33,00,44,00,00,\
+  00
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.png\Shell\3D Edit]
+@="@%SystemRoot%\\system32\\mspaint.exe,-59500"
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.png\Shell\3D Edit\command]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,6d,00,73,00,\
+  70,00,61,00,69,00,6e,00,74,00,2e,00,65,00,78,00,65,00,20,00,22,00,25,00,31,\
+  00,22,00,20,00,2f,00,46,00,6f,00,72,00,63,00,65,00,42,00,6f,00,6f,00,74,00,\
+  73,00,74,00,72,00,61,00,70,00,50,00,61,00,69,00,6e,00,74,00,33,00,44,00,00,\
+  00
+
+; Win 10 Version 1703 RS2 Add Traditional Control Panel (with icon) to right-click context menu (Desktop)
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Control Panel]
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Control Panel\command]
+@="rundll32.exe shell32.dll,Control_RunDLL"
+"Icon"="imageres.dll,-27"
+
+
+;Add_Open_Location_context_menu
+[HKEY_CLASSES_ROOT\.symlink\shellex\ContextMenuHandlers\OpenContainingFolderMenu]
+@="{37ea3a21-7493-4208-a011-7f9ea79ce9f5}"
+[HKEY_CLASSES_ROOT\LibraryLocation\ShellEx\ContextMenuHandlers\OpenContainingFolderMenu]
+@="{37ea3a21-7493-4208-a011-7f9ea79ce9f5}"
+[HKEY_CLASSES_ROOT\lnkfile\shellex\ContextMenuHandlers\OpenContainingFolderMenu]
+@="{37ea3a21-7493-4208-a011-7f9ea79ce9f5}"
+[HKEY_CLASSES_ROOT\RecentDocument\ShellEx\ContextMenuHandlers\OpenContainingFolderMenu]
+@="{37ea3a21-7493-4208-a011-7f9ea79ce9f5}"
+[HKEY_CLASSES_ROOT\Results\ShellEx\ContextMenuHandlers\OpenContainingFolderMenu]
+@="{37ea3a21-7493-4208-a011-7f9ea79ce9f5}"
+
+;Add Screen resolution to Desktop context menu
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Screen resolution]
+"ControlPanelName"="Microsoft.Display"
+"ControlPanelPage"="Settings"
+"Icon"="%SystemRoot%\\System32\\display.dll,-1"
+"Position"="Bottom"
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Screen resolution\command]
+"DelegateExecute"="{06622D85-6856-4460-8DE1-A81921B41C4B}"
+
+;Disable Microsoft OneDrive
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\OneDrive]
+"DisableFileSyncNGSC"=dword:00000001
+
+;Disable cortana but keep search
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"PreventIndexOnBattery"=dword:00000001
+"AllowSearchToUseLocation"=dword:00000000
+"AllowCortana"=dword:00000000 
+"ConnectedSearchUseWeb"=dword:00000000
+"DisableWebSearch"=dword:00000001
+"PreventIndexingOutlook"=dword:00000001
+"PreventIndexingEmailAttachments"=dword:00000001
+"ConnectedSearchPrivacy"=dword:00000003
+"ConnectedSearchSafeSearch"=dword:00000003
+"ConnectedSearchUseWebOverMeteredConnections"=dword:00000000
+"PreventRemoteQueries"=dword:00000001
+"DisableRemovableDriveIndexing"=dword:00000001
+"ConnectedSearchUseWeb"=dword:00000000
+"BingSearchEnabled"=dword:00000000
+"CortanaConsent"=dword:00000000
+"AllowSearchToUseLocation"=dword:00000000
+"AllowCloudSearch"=dword:00000000
+
+;Disable AutoPlay
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoDriveTypeAutoRun"=dword:000000ff
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoDriveTypeAutoRun"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"NoAutoplayfornonVolume"=dword:00000001
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer]
+"NoAutoplayfornonVolume"=-
+
+;Confirmation of file deletion
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"ConfirmFileDelete"=dword:00000001
+
+;Disable Ads In Windows 10 File Explorer
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ShowSyncProviderNotifications"=dword:00000000
+
+;Disable online tips and help for Settings app
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"AllowOnlineTips"=dword:00000000
+
+;Disable Activity history
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"PublishUserActivities"=dword:00000000
+
+;Hide Microsoft Edge button in IE
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Internet Explorer\Main]
+"HideNewEdgeButton"=dword:00000001
+
+;Remove Games
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\GameUX\Games\{FC96B68C-09EF-4251-A598-19E4BE1B76A9}]
+
+;Remove Look for an app in theStore
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer]
+"NoUseStoreOpenWith"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"NoUseStoreOpenWith"=dword:00000001
+
+;Remove Shortcut text
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"link"=hex:00,00,00,00
+
+;Status bar (bottom) in Explorer.
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ShowStatusBar"=dword:00000001
+
+;Show all icons in the Control Panel
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ControlPanel]
+"AllItemsIconView"=dword:00000002
+"StartupPage"=dword:00000001
+
+;Restore functionality of older Photo Viewer
+; Change Extension's File Type
+[HKEY_CURRENT_USER\Software\Classes\.jpg]
+@="PhotoViewer.FileAssoc.Tiff"
+[HKEY_CURRENT_USER\Software\Classes\.jpeg]
+@="PhotoViewer.FileAssoc.Tiff"
+[HKEY_CURRENT_USER\Software\Classes\.gif]
+@="PhotoViewer.FileAssoc.Tiff"
+[HKEY_CURRENT_USER\Software\Classes\.png]
+@="PhotoViewer.FileAssoc.Tiff"
+[HKEY_CURRENT_USER\Software\Classes\.bmp]
+@="PhotoViewer.FileAssoc.Tiff"
+[HKEY_CURRENT_USER\Software\Classes\.tiff]
+@="PhotoViewer.FileAssoc.Tiff"
+[HKEY_CURRENT_USER\Software\Classes\.ico]
+@="PhotoViewer.FileAssoc.Tiff"
+
+;Remove Send a Smile (Feedback) Button from IE11 Toolbar
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Internet Explorer\Restrictions]
+"NoHelpItemSendFeedback"=dword:00000001
+
+;Fix Slow-Loading Windows Icons by Increasing the Icon Cache
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
+"Max Cached Icons"="4096"
+
+; FF to disable all IPv6 components, except the IPv6 loopback interface, which can't be deactivated.
+; 0x01  to disable IPv6 all tunnel interfaces. These include Intra-Site Automatic Tunnel Addressing Protocol (ISATAP), 6to4, and Teredo. If you have a IPv6 router, then you want to choose this one.
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters]
+"DisabledComponents"=dword:000000ff
+
+;telemetry
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MRT]
+"DontOfferThroughWUAU"=dword:00000001
+"DontReportInfectionInformation"=dword:00000001
+
+;Disable Windows Error Reporting current user
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\Windows Error Reporting]
+"Disabled"=dword:00000001
+
+;Disable Windows Store
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsStore]
+"RemoveWindowsStore"=dword:00000001
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;Отключить сообщение о возможности использования автозаполнения
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\IntelliForms]
+"AskUser"=dword:00000000
+
+;Отключить отправку отчетов об ошибках IE
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]
+"IEWatsonDisabled"=dword:00000001 
+
+;Управление регистром отображения имен папок и файлов в проводнике: отображать строчные и прописные буквы
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"DontPrettyPath"=dword:00000001
+
+;Отбpacывaниe тeнeй знaчкaми нa paбoчeм cтoлe 
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ListviewShadow"=dword:00000001
+
+;Включить информирование об установке новых программ (выделение цветом
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_NotifyNewApps"=dword:00000001
+
+;Затенить ярлыки на не полностью установленные программы в меню "Пуск
+[HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"GreyMSIAds"=dword:00000001
+
+;Не показывать пункт "Помощь" в меню Пуск
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_ShowHelp"=dword:00000000
+
+;Открывать NFO-файлы при помощи Блокнота 
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.nfo]
+"Application"="NOTEPAD.EXE"
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.nfo\OpenWithList]
+"a"="Explorer.exe"
+"MRUList"="ba"
+"b"="NOTEPAD.EXE"
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.nfo\OpenWithProgids]
+"MSInfo.Document"=hex(0)
+
+;Добавляет Мой Компьютер, Мои Документы, Мое Сетевое окружение, Internet Explorer на Рабочий Стол при не классическом меню Пуск 
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
+"{20D04FE0-3AEA-1069-A2D8-08002B30309D}"=dword:00000000 ;Мой компьютер
+"{450D8FBA-AD25-11D0-98A8-0800361B1103}"=dword:00000000 ;Мои документы 
+
+;Отключить предупреждение о начале просмотра веб-страницы через безопасное соединение 
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings]
+"WarnOnZoneCrossing"=dword:00000000
+
+;Уменьшить кэш IE до 10 MB
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Content]
+"CacheLimit"=dword:00002800
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache\Content]
+"CacheLimit"=dword:00002800
+
+;Отключить предупреждение "Информация переданная через Интернет, может стать доступной другим пользователям" 
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3]
+"1601"=dword:00000000
+
+;При ошибках оболочки (Explorer) перезагружать только ее саму, а не всю ОС
+[HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Winlogon]
+"AutoRestartShell"=dword:00000001
+
+;IE: скрыть пункт меню Справка - Отзывы и предложения 
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Internet Explorer\Restrictions]
+"NoHelpItemSendFeedback"=dword:00000001
+
+;IE: скрыть пункт меню Справка - Полезный совет
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Internet Explorer\Restrictions]
+"NoHelpItemTipOfTheDay"=dword:00000001
+
+;Отключить эскизы видео в Проводнике (ускоряет работу и позволяет перемещать и удалять файлы)
+[-HKEY_CLASSES_ROOT\.avi\ShellEx]
+[-HKEY_CLASSES_ROOT\.mpg\ShellEx]
+[-HKEY_CLASSES_ROOT\.mpe\ShellEx]
+[-HKEY_CLASSES_ROOT\.mpeg\ShellEx]
+[-HKEY_CLASSES_ROOT\.mp4\ShellEx]
+
+;!!Отключение анимации окон при свертывании и развертывании
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\AnimateMinMax]
+"DefaultApplied"=dword:00000001
+"DefaultValue"=dword:00000000
+[HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics]
+"MinAnimate"="0"
+
+;Включение отбрасывания теней значками на рабочем столе
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ListviewShadow"=dword:00000001
+
+;Отключение скольжения кнопок панели задач
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"TaskbarAnimations"=dword:00000000
+
+;Отключение отображения фоновых рисунков для различных типов папок
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ListviewWatermark"=dword:00000000
+
+;Включение сглаживания неровностей экранных шрифтов
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"FontSmoothingType"=dword:2
+"FontSmoothing"="2"
+
+
+;Отключение скольжения и затухания меню
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"UserPreferencesMask"=hex:90,12,01,80
+
+;Отключить проверку недостатка места на диске
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+NoLowDiskSpaceChecks=dword:00000001
+
+;изменяет стартовую страницу Internet Explorer
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]
+"Start Page"="http://google.com"
+
+;изменяет стартовую страницу Internet Explorer по умолчанию
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main]
+"Default_Page_URL"="http://google.com/"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Download]
+"CheckExeSignatures"="no"
+"RunInvalidSignatures"=dword:00000001
+
+;Подстановка шрифтов для правильного отображения кириллицы
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontSubstitutes] 
+"Arial,0"="Arial,204"
+"Arial Cyr,0"="Arial,204"
+"Comic Sans MS,0"="Comic Sans MS,204"
+"Courier,0"="Courier New,204"
+"Courier,204"="Courier New,204"
+"Courier New Cyr,0"="Courier New,204"
+"Fixedsys,0"="Fixedsys,204"
+"Helv,0"="MS Sans Serif,204"
+"MS Sans Serif,0"="MS Sans Serif,204"
+"MS Serif,0"="MS Serif,204"
+"Small Fonts,0"="Small Fonts,204"
+"System,0"="Arial,204"
+"Tahoma,0"="Tahoma,204"
+"Times New Roman,0"="Times New Roman,204"
+"Times New Roman Cyr,0"="Times New Roman,204"
+"Tms Rmn,0"="MS Serif,204"
+"Verdana,0"="Verdana,204"
+
+;Ускорение обзора компьютеров в локальной сети
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RemoteComputer\NameSpace\{D6277990-4C6A-11CF-8D87-00AA0060F5BF}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RemoteComputer\NameSpace\{2227A280-3AEA-1069-A2DE-08002B30309D}]
+
+;Исправление неполадок при отображении кириллицы в программах
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Nls\CodePage] 
+"1250"="c_1251.nls"
+"1251"="c_1251.nls"
+"1252"="c_1251.nls"
+"1253"="c_1251.nls"
+"1254"="c_1251.nls"
+"1255"="c_1251.nls"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontMapper]
+"ARIAL"=dword:000000cc
+
+;Отображать подробную информацию в Диспетчере устройств
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment]
+"DEVMGR_SHOW_DETAILS"=dword:00000001

@@ -121,4 +121,4 @@ if ($exclusionsToAdd.Length -gt 0) {
 # S E T U P   MYWINDOWS   S E T T I N G S  #
 #                                          #
 ############################################
-git clone https://github.com/nickseagull/my-windows $env:USERPROFILE\Projects\my-windows
+#git clone https://github.com/nickseagull/my-windows $env:USERPROFILE\Projects\my-windows
