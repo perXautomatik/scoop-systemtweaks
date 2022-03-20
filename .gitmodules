@@ -1,9 +1,9 @@
-[submodule "submodules/postinstallScript"]
-	path = submodules/postinstallScript
+[submodule "loose/postinstallScript"]
+	path = loose/postinstallScript
 	url = https://github.com/perXautomatik/Windows10-Postinstall.git
-[submodule "submodules/RegImporter"]
-	path = submodules/RegImporter
+[submodule "Helpers/RegImporter"]
+	path = Helpers/RegImporter
 	url = https://github.com/perXautomatik/Reg-importer.git
-[submodule "submodules/PowershellRoutines"]
-	path = submodules/PowershellRoutines
+[submodule "Disassembler/PowershellRoutines"]
+	path = Disassembler/PowershellRoutines
 	url = https://github.com/perXautomatik/Win10-Initial-Setup-Script.git
