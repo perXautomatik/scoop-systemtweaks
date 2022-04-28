@@ -1,4 +1,4 @@
-# Scoop Bucket Template
+# scoop-systemtweaks
 
 Scoop bucket for scripts that tweaks system settings
 
