@@ -1,6 +1,8 @@
 {
     "version": "1.2021.11.30",
     "description": "Remove 'print' command from context menu for .txt/.bat/.cmd/.ttc/.ttf/.otf/.rtf/.reg files",
+    "homepage": "none",
+    "license": "Unlicense",
     "url": "https://raw.githubusercontent.com/issaclin32/scoop-bucket/master/scripts/remove-print-context.ps1",
     "hash": "e602804fad21cbaaba093503c64db563858954e811c0c366688cf942903a18ac",
     "pre_install": [
