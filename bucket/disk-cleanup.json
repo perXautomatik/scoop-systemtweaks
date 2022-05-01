@@ -1,7 +1,0 @@
-{
-    "description": "Run 'Windows disk cleanup utility' without user intervention.",
-    "version": "1.0",
-    "url": "https://github.com/issaclin32/scoop-bucket/raw/master/scripts/disk-cleanup.ps1",
-    "hash": "a33eba960b1e7188fb599287f3a23d246db7b4298d05b40ba2af708e66718a26",
-    "bin": "disk-cleanup.ps1"
-}
