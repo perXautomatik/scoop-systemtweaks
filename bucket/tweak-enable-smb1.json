@@ -1,8 +1,8 @@
 {
     "version": "1.0",
     "description": "Enables SMB1 (old protocol for local network file sharing) on Windows 10",
-    "homepage": "None",
-    "license": "None",
+    "homepage": "https://raw.githubusercontent.com/issaclin32/scoop-systemtweaks/master/scripts/dummy.txt",
+    "license": "Unlicense",
     "url": "https://raw.githubusercontent.com/issaclin32/scoop-systemtweaks/master/scripts/dummy.txt",
     "hash": "d3eb539a556352f3f47881d71fb0e5777b2f3e9a4251d283c18c67ce996774b7",
     "installer": {
