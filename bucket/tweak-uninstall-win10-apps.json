@@ -4,7 +4,8 @@
     "description": "Uninstall built-in Win10 Store Apps(such as Candy Crush)",
     "homepage": "none",
     "license": "Unlicense",
-    "url": "https://www.google.com#/dummy",
+    "url": "https://raw.githubusercontent.com/issaclin32/scoop-systemtweaks/master/scripts/dummy.txt",
+    "hash": "d3eb539a556352f3f47881d71fb0e5777b2f3e9a4251d283c18c67ce996774b7",
     "notes": "You can now run 'scoop uninstall uninstall-win10-apps' to clean up the package.",
     "installer": {
         "script": "Get-AppPackage|?{ $_.Name -ne 'Microsoft.WindowsStore'}|Remove-AppPackage -ea Ignore"
