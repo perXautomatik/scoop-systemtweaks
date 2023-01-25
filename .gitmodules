@@ -1,0 +1,47 @@
+[submodule "AppData"]
+url = https://github.com/perXautomatik/AppData
+
+[submodule "AHK"]
+url = https://github.com/perXautomatik/AHK-EverydayScripts
+
+[submodule "AdvancedRenamer"]
+url = https://github.com/perXautomatik/AdvancedRenamer-BatchMethods
+
+[submodule "BeondCompare4"]
+url = https://github.com/perXautomatik/BeondCompare4
+
+[submodule "Cherrytree"]
+url = https://github.com/perXautomatik/CherrytreePortable
+
+[submodule "Datagrip"]
+url = https://github.com/perXautomatik/Datagrip-UserFolder
+
+[submodule "Ditto"]
+url = https://github.com/perXautomatik/DittoPortable
+
+[submodule "Everything"]
+url = https://github.com/perXautomatik/EverythingSettings
+
+[submodule "OtherVersionControlledText"]
+url = https://github.com/perXautomatik/OtherVersionControlledText
+
+[submodule "portableAppsPlatform"]
+url = https://github.com/perXautomatik/portableAppsPlatform
+
+[submodule "PortableProgramSuit"]
+url = https://github.com/perXautomatik/PortableProgramSuit
+
+[submodule "Powershell"]
+url = https://github.com/perXautomatik/Powershell-Profile
+
+[submodule "PowerShellCmdHist"]
+url = https://github.com/perXautomatik/PowerShellCmdHist
+
+[submodule "steamapps"]
+url = https://github.com/perXautomatik/steamapps
+
+[submodule "xEditScripts"]
+url = https://github.com/perXautomatik/xEditScripts
+
+[submodule "Git"]
+url = https://gist.github.com/perXautomatik/e01f68f13580acea470e1ae1ce680a15
