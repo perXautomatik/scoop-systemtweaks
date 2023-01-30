@@ -1,47 +1,48 @@
 [submodule "AppData"]
 url = https://github.com/perXautomatik/AppData
-
+path = AppData
 [submodule "AHK"]
 url = https://github.com/perXautomatik/AHK-EverydayScripts
-
+path = AHK
 [submodule "AdvancedRenamer"]
 url = https://github.com/perXautomatik/AdvancedRenamer-BatchMethods
-
+path = AdvancedRenamer
 [submodule "BeondCompare4"]
 url = https://github.com/perXautomatik/BeondCompare4
-
+path = BeondCompare4
 [submodule "Cherrytree"]
 url = https://github.com/perXautomatik/CherrytreePortable
-
+path = Cherrytree
 [submodule "Datagrip"]
 url = https://github.com/perXautomatik/Datagrip-UserFolder
-
+path = Datagrip
 [submodule "Ditto"]
 url = https://github.com/perXautomatik/DittoPortable
-
+path = Ditto
 [submodule "Everything"]
 url = https://github.com/perXautomatik/EverythingSettings
-
+path = Everything
 [submodule "OtherVersionControlledText"]
 url = https://github.com/perXautomatik/OtherVersionControlledText
-
+path = OtherVersionControlledText
 [submodule "portableAppsPlatform"]
 url = https://github.com/perXautomatik/portableAppsPlatform
-
+path = portableAppsPlatform
 [submodule "PortableProgramSuit"]
 url = https://github.com/perXautomatik/PortableProgramSuit
-
+path = PortableProgramSuit
 [submodule "Powershell"]
 url = https://github.com/perXautomatik/Powershell-Profile
-
+path = Powershell
 [submodule "PowerShellCmdHist"]
 url = https://github.com/perXautomatik/PowerShellCmdHist
-
+path = PowerShellCmdHist
 [submodule "steamapps"]
 url = https://github.com/perXautomatik/steamapps
-
+path = steamapps
 [submodule "xEditScripts"]
 url = https://github.com/perXautomatik/xEditScripts
-
+path = xEditScripts
 [submodule "Git"]
 url = https://gist.github.com/perXautomatik/e01f68f13580acea470e1ae1ce680a15
+path = Git
