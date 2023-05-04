@@ -1,0 +1,43 @@
+linkshellextension
+npm
+mongodb-shell
+nodejs
+nodejs.install
+#In the future, you might want to update `npm`. On Windows, just running `npm i -g npm` doesn't always do what it should, so use `npm-windows-upgrade` instead:
+
+npm install -g npm-windows-upgrade
+npm-windows-upgrade
+#### Version Control: Git
+cinst git.install
+cinst poshgit
+# Restart PowerShell / CMDer before moving on - or run
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+
+cinst Git-Credential-Manager-for-Windows
+cinst github
+nodejs-lts
+
+logexpert
+regcool.portable
+#### Python
+#Python is a complex world with a bunch of flavors, but Python 3, pip, and easy_install should have you prepared for most things.
+
+cinst python
+cinst pip
+cinst easy.install
+#If you intend to work with Node.js, know that compiling native Node modules usually requires Python 2.7 instead of Python 3. For Node development, do not install Python 3 - instead, run these commands:
+
+cinst python2
+
+
+#### Docker, VirtualBox, Vagrant
+#If you want to run Docker machines and images, you might not need VirtualBox. In fact, installing VirtualBox on your system isn't always the best idea, given that it messes with a few system components.
+
+#Docker released a version for OS X and Windows that no longer requires VirtualBox to be installed - 
+#and instead uses the default Hypervisor that comes with the operating system (on Windows, that's Hyper-V). You can [read more about it over in Docker's documentation](https://docs.docker.com/docker-for-windows/).
+
+cinst docker-for-windows
+actiona.portable
+pathmanager.portable
+tweakeze.portable
+z-cron
