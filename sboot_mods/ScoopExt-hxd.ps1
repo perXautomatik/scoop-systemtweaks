@@ -17,16 +17,13 @@ Function AppUninstalled {
 }
 Function EnsureHxdConfiguration {
     $count = GetUpdateCount
-
     $isInstalled = ScoopIsInstalled "hxd"
     if ($isInstalled) {
 	$hxdPath = scoop prefix "hxd"
 	AppInstalled($hxdPath)
     } else {
 	AppUninstalled
-
     }
-
     $count = (GetUpdateCount) - $count
     if ($count) {
 	IncrementGlobalAssociationChangedCounter

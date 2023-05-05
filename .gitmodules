@@ -1,25 +1,34 @@
  [submodule "AllowAccessWindowsDefender"]
-	path = AllowAccessWindowsDefender
+	path = scripts/AllowAccessWindowsDefender/AllowAccessWindowsDefender
 	url = https://gist.github.com/94f432c68944dfc53414bb4cc7f7a2bb
+[submodule "Disassembler"]
+	path = Disassembler
+	url = https://gist.github.com/alirobe/7f3b34ad89a159e6daa1
 
 [submodule "Disassembler/PowershellRoutines"]
 	path = Disassembler/PowershellRoutines
 	url = https://github.com/perXautomatik/Win10-Initial-Setup-Script.git
 
  [submodule "Export-Inst-Choco"]
-	path = Export-Inst-Choco
+	path = scripts/Export-Inst-Choco/Export-Inst-Choco
 	url = https://gist.github.com/alimbada/449ddf65b4ef9752eff3
 
  [submodule "GetInstalled"]
-	path = GetInstalled
+	path = scripts/GetInstalled/GetInstalled
 	url = https://gist.github.com/a524bd4ce9f2b041cba5d499ba76142c
 [submodule "Helpers/RegImporter"]
-	path = Helpers/RegImporter
+	path = scripts/RegImporter/RegImporter
 	url = https://github.com/perXautomatik/Reg-importer.git
 
  [submodule "Optimize-PsReadLineHistory"]
 path = Optimize-PsReadLineHistory
  url = https://gist.github.com/aef342634e5671befb1904a1be39e56c
+[submodule "ScoopBucket"]
+	path = ScoopBucket
+	url = https://github.com/perXautomatik/ScoopBucket
+[submodule "WindowsDebloat"]
+	path = WindowsDebloat
+	url = https://github.com/perXautomatik/Windows10-Postinstall.git
 
  [submodule "WindowsDebloat/MustHave-2018"]
 	path = scripts/RegestryChanges/MustHave-2018/MustHave-2018
@@ -35,11 +44,26 @@ path = WindowsDebloat/OptimizationScript
 
 
  [submodule "ini"]
-	path = ini
+	path = scripts/ini/ini
 	url = https://gist.github.com/6d1765c568a22fead3cd49d3abb3cd91
 [submodule "loose/postinstallScript"]
 	path = scripts/project-Windows10Debloater/postinstallScript
 	url = https://github.com/perXautomatik/Windows10-Postinstall.git
+[submodule "scripts/RegImporter"]
+	path = scripts/RegImporter
+	url = https://github.com/perXautomatik/Reg-importer.git
+[submodule "scripts/project-Windows10Debloater"]
+	path = scripts/project-Windows10Debloater
+	url = https://github.com/perXautomatik/Win10-Initial-Setup-Script.git
+[submodule "submodules/PowershellRoutines"]
+	path = submodules/PowershellRoutines
+	url = https://github.com/perXautomatik/Win10-Initial-Setup-Script.git
+[submodule "scripts/RegImporter"]
+	path = scripts/RegImporter
+	url = https://github.com/perXautomatik/Reg-importer.git
+[submodule "scripts/project-Windows10Debloater"]
+	path = scripts/project-Windows10Debloater
+	url = https://github.com/perXautomatik/Win10-Initial-Setup-Script.git
 [submodule "submodules/PowershellRoutines"]
 	path = submodules/PowershellRoutines
 	url = https://github.com/perXautomatik/Win10-Initial-Setup-Script.git
@@ -56,9 +80,9 @@ path = WindowsDebloat/OptimizationScript
 	path = windowsadmin
 	path = PostInstall/Optimize
 	url = https://github.com/perXautomatik/PowerShell-Scripts.git
-[submodule "scripts/RegImporter"]
-	path = scripts/RegImporter
-	url = https://github.com/perXautomatik/Reg-importer.git
-[submodule "scripts/project-Windows10Debloater"]
-	path = scripts/project-Windows10Debloater
-	url = https://github.com/perXautomatik/Win10-Initial-Setup-Script.git
+[submodule "Scripts/powershellAliasesUserProfile"]
+	path = Scripts/powershellAliasesUserProfile
+	url = https://gist.github.com/54cd776f5077b53aa0d4ba2bee360108
+[submodule "Scripts/TakeOwnerShip"]
+	path = Scripts/TakeOwnerShip
+	url = https://gist.github.com/perXautomatik/ce36fd285e8cf8eb00cf3b17e0e8d79d
