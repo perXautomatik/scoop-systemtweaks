@@ -19,7 +19,9 @@ begin {
     if (-not $env:SCOOP_HOME) { $env:SCOOP_HOME = Resolve-Path (scoop prefix scoop) }
     $Dir = Resolve-Path $Dir
 }
-
-process { foreach ($man in $Manifest) { Invoke-Expression -Command "$env:SCOOP_HOME\bin\formatjson.ps1 -App ""$man"" -Dir ""$Dir""" } }
+$formatjson = "$env:SCOOP_HOME/bin/formatjson.ps1"
+process { foreach ($man in $Manifest) {
+Invoke-Expression -Command "& '$formatjson' -Dir ""$Dir"" -App ""$man"""
+ } }
 
 end { Write-Host 'DONE' -ForegroundColor Yellow }

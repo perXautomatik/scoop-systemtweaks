@@ -20,7 +20,7 @@ param(
     [Alias('App', 'Name')]
     [String] $Manifest = '*',
     [ValidateScript( { if ( Test-Path $_ -Type Container) { $true } else { $false } })]
-    [String] $Dir = "$PSScriptRoot\..\bucket",
+    [String] $Dir = "$PSScriptRoot\..\bucket", # checks the parent dir
     [ValidatePattern('^(.+)\/(.+):(.+)$')]
     [String] $Upstream = $((git config --get remote.origin.url) -replace '^.+[:/](?<user>.*)\/(?<repo>.*)(\.git)?$', '${user}/${repo}:master'),
     [Switch] $Push,
@@ -30,20 +30,22 @@ param(
 
 begin {
     if (-not $env:SCOOP_HOME) {
-        if (-not (Get-Command 'scoop' -ErrorAction SilentlyContinue)) { throw 'Scoop installation or SCOOP_HOME environment is required' }
-        $env:SCOOP_HOME = scoop prefix scoop | Resolve-Path
+	if (-not (Get-Command 'scoop' -ErrorAction SilentlyContinue)) { throw 'Scoop installation or SCOOP_HOME environment is required' }
+	$env:SCOOP_HOME = scoop prefix scoop | Resolve-Path
     }
     $Params = @{
-        App               = $Manifest
-        Dir               = Resolve-Path $Dir
-        Upstream          = $Upstream
-        Push              = $Push
-        Request           = $Request
-        SpecialSnowflakes = $SpecialSnowflakes
-        SkipUpdated       = $true
+	App               = $Manifest
+	Dir               = Resolve-Path $Dir
+	Upstream          = $Upstream
+	Push              = $Push
+	Request           = $Request
+	SpecialSnowflakes = $SpecialSnowflakes
+	SkipUpdated       = $true
     }
+    $autopr = "$env:SCOOP_HOME/bin/auto-pr.ps1"
 }
 
-process { & "$env:SCOOP_HOME\bin\auto-pr.ps1" @Params }
+
+process { & $autopr @Params }
 
 end { Write-Host 'DONE' -ForegroundColor Yellow }

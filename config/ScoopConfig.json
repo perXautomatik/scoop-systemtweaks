@@ -1,8 +1,4 @@
 {
-  "buckets": [
-    "main",
-    "sboot@https://github.com/xfournet/scoot-sboot"
-  ],
   "apps": [
     "######## Core Scoop dependencies ########",
     "aria2",
@@ -10,6 +6,10 @@
     "git",
     "sboot/sboot",
     ""
+  ],
+  "buckets": [
+    "main",
+    "sboot@https://github.com/xfournet/scoot-sboot"
   ],
   "exts": [
     {
@@ -21,8 +21,14 @@
         ]
       }
     },
+    {    
+          "name": "git",
+      "script": "EnsureGitConfiguration"
+    },
+
     {
-      "app": "hxd"
+      "name": "hxd",
+      "script": "EnsureHxdConfiguration"
     },
     {
       "app": "keepass"

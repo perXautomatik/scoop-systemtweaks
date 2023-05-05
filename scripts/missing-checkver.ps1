@@ -25,17 +25,17 @@ param(
     [Alias('App')]
     [String] $Manifest = '*',
     [ValidateScript( { if ( Test-Path $_ -Type Container) { $true } else { $false } })]
-    [String] $Dir = "$PSScriptRoot\..\bucket",
+    [String] $Dir = "$PSScriptRoot\..\bucket",   # checks the parent dir
     [Parameter(ValueFromRemainingArguments = $true)]
     [String[]] $Rest = ''
 )
 
 begin {
-    if (-not $env:SCOOP_HOME) { $env:SCOOP_HOME = Resolve-Path (scoop prefix scoop) }
+if(!$env:SCOOP_HOME) { $env:SCOOP_HOME = Resolve-Path (scoop prefix scoop) }
     $Dir = Resolve-Path $Dir
     $Rest = $Rest -join ' '
 }
-
-process { Invoke-Expression -Command "$env:SCOOP_HOME\bin\missing-checkver.ps1 -App ""$Manifest"" -Dir ""$Dir"" $Rest" }
+$missing_checkver = "$env:SCOOP_HOME/bin/missing-checkver.ps1"
+process { Invoke-Expression -Command  "& '$missing_checkver' -Dir ""$Dir"" -App ""$Manifest"" $Rest" }
 
 end { Write-Host 'DONE' -ForegroundColor Yellow }

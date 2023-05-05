@@ -1,48 +1,64 @@
-[submodule "AppData"]
-url = https://github.com/perXautomatik/AppData
-path = AppData
-[submodule "AHK"]
-url = https://github.com/perXautomatik/AHK-EverydayScripts
-path = AHK
-[submodule "AdvancedRenamer"]
-url = https://github.com/perXautomatik/AdvancedRenamer-BatchMethods
-path = AdvancedRenamer
-[submodule "BeondCompare4"]
-url = https://github.com/perXautomatik/BeondCompare4
-path = BeondCompare4
-[submodule "Cherrytree"]
-url = https://github.com/perXautomatik/CherrytreePortable
-path = Cherrytree
-[submodule "Datagrip"]
-url = https://github.com/perXautomatik/Datagrip-UserFolder
-path = Datagrip
-[submodule "Ditto"]
-url = https://github.com/perXautomatik/DittoPortable
-path = Ditto
-[submodule "Everything"]
-url = https://github.com/perXautomatik/EverythingSettings
-path = Everything
-[submodule "OtherVersionControlledText"]
-url = https://github.com/perXautomatik/OtherVersionControlledText
-path = OtherVersionControlledText
-[submodule "portableAppsPlatform"]
-url = https://github.com/perXautomatik/portableAppsPlatform
-path = portableAppsPlatform
-[submodule "PortableProgramSuit"]
-url = https://github.com/perXautomatik/PortableProgramSuit
-path = PortableProgramSuit
-[submodule "Powershell"]
-url = https://github.com/perXautomatik/Powershell-Profile
-path = Powershell
-[submodule "PowerShellCmdHist"]
-url = https://github.com/perXautomatik/PowerShellCmdHist
-path = PowerShellCmdHist
-[submodule "steamapps"]
-url = https://github.com/perXautomatik/steamapps
-path = steamapps
-[submodule "xEditScripts"]
-url = https://github.com/perXautomatik/xEditScripts
-path = xEditScripts
-[submodule "Git"]
-url = https://gist.github.com/perXautomatik/e01f68f13580acea470e1ae1ce680a15
-path = Git
+ [submodule "AllowAccessWindowsDefender"]
+	path = AllowAccessWindowsDefender
+	url = https://gist.github.com/94f432c68944dfc53414bb4cc7f7a2bb
+
+[submodule "Disassembler/PowershellRoutines"]
+	path = Disassembler/PowershellRoutines
+	url = https://github.com/perXautomatik/Win10-Initial-Setup-Script.git
+
+ [submodule "Export-Inst-Choco"]
+	path = Export-Inst-Choco
+	url = https://gist.github.com/alimbada/449ddf65b4ef9752eff3
+
+ [submodule "GetInstalled"]
+	path = GetInstalled
+	url = https://gist.github.com/a524bd4ce9f2b041cba5d499ba76142c
+[submodule "Helpers/RegImporter"]
+	path = Helpers/RegImporter
+	url = https://github.com/perXautomatik/Reg-importer.git
+
+ [submodule "Optimize-PsReadLineHistory"]
+path = Optimize-PsReadLineHistory
+ url = https://gist.github.com/aef342634e5671befb1904a1be39e56c
+
+ [submodule "WindowsDebloat/MustHave-2018"]
+	path = scripts/RegestryChanges/MustHave-2018/MustHave-2018
+	url = https://gist.github.com/c3fe34831f6c80a094a38960aa4e9446
+
+ [submodule "WindowsDebloat/OptimizationScript"]
+path = WindowsDebloat/OptimizationScript
+ url = https://gist.github.com/aef342634e5671befb1904a1be39e56c
+
+ [submodule "WindowsDebloat/reclaimWindows"]
+	path = WindowsDebloat/reclaimWindows
+	url = https://gist.github.com/alirobe/7f3b34ad89a159e6daa1
+
+
+ [submodule "ini"]
+	path = ini
+	url = https://gist.github.com/6d1765c568a22fead3cd49d3abb3cd91
+[submodule "loose/postinstallScript"]
+	path = scripts/project-Windows10Debloater/postinstallScript
+	url = https://github.com/perXautomatik/Windows10-Postinstall.git
+[submodule "submodules/PowershellRoutines"]
+	path = submodules/PowershellRoutines
+	url = https://github.com/perXautomatik/Win10-Initial-Setup-Script.git
+[submodule "submodules/RegImporter"]
+	path = submodules/RegImporter
+	url = https://github.com/perXautomatik/Reg-importer.git
+[submodule "submodules/postinstallScript"]
+	path = submodules/postinstallScript
+	url = https://github.com/perXautomatik/Windows10-Postinstall.git
+[submodule "windowsAdmin"]
+	
+	[submodule "PostInstall/Optimize"]
+	branch = WindowsAdmin
+	path = windowsadmin
+	path = PostInstall/Optimize
+	url = https://github.com/perXautomatik/PowerShell-Scripts.git
+[submodule "scripts/RegImporter"]
+	path = scripts/RegImporter
+	url = https://github.com/perXautomatik/Reg-importer.git
+[submodule "scripts/project-Windows10Debloater"]
+	path = scripts/project-Windows10Debloater
+	url = https://github.com/perXautomatik/Win10-Initial-Setup-Script.git

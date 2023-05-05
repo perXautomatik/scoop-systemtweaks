@@ -194,6 +194,7 @@ EnsureWindowsApps @{
 # Control Windows Features
 # Same as Control Panel -> Programs and Features -> Turn Windows features on or off
 EnsureWindowsFeature @{
+    "TelnetClient" = "Enabled"
     "Microsoft-Hyper-V-All" = "Enabled"
     "Containers" = "Enabled"
     "Containers-DisposableClientVM" = "Enabled"
@@ -204,6 +205,7 @@ EnsureWindowsFeature @{
     "WindowsMediaPlayer" = "Disabled"
     "Internet-Explorer-Optional-amd64" = "Disabled"
     "Printing-XPSServices-Features" = "Disabled"
+    "SMB1Protocol" = "Disabled"
     "MicrosoftWindowsPowerShellV2Root" = "Disabled"
     "WorkFolders-Client" = "Disabled"
 }

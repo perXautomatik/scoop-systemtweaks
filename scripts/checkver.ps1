@@ -19,7 +19,7 @@
     -s - Skip manifest with latest version
     -u - Update given manifests
     -f - Force update given manifests
-        Usefull for hash updates
+	Usefull for hash updates
 .EXAMPLE
     PS BUCKETROOT > .\bin\checkver.ps1
     Check all manifests in root.
@@ -56,7 +56,7 @@ param(
     [Alias('App')]
     [String[]] $Manifest = '*',
     [ValidateScript( { if ( Test-Path $_ -Type Container) { $true } else { $false } })]
-    [String] $Dir = "$PSScriptRoot\..\bucket",
+    [String] $Dir = "$PSScriptRoot\..\bucket",    # checks the parent dir
     [Switch] $Recurse,
     [Parameter(ValueFromRemainingArguments = $true)]
     [String[]] $Rest = @()
@@ -67,15 +67,17 @@ begin {
 
     if (-not $env:SCOOP_HOME) { $env:SCOOP_HOME = Resolve-Path (scoop prefix scoop) }
     $Dir = Resolve-Path $Dir
-    $Script = "$env:SCOOP_HOME\bin\checkver.ps1"
+$checkver = "$env:SCOOP_HOME/bin/checkver.ps1"
     $Rest = $Rest | Select-Object -Unique # Remove duplicated switches
 }
 
 process {
     if ($Recurse) {
-        Get-RecursiveFolder | ForEach-Object { Invoke-Expression -Command "$Script -Dir ""$_"" $Rest" }
+	Get-RecursiveFolder | ForEach-Object {
+	 Invoke-Expression -Command "& '$checkver' -Dir ""$_"" $Rest" }
     } else {
-        foreach ($man in $Manifest) { Invoke-Expression -Command "$Script -App ""$man"" -Dir ""$Dir"" $Rest" }
+	foreach ($man in $Manifest) {
+	Invoke-Expression -Command "& '$checkver' -Dir ""$Dir"" $Rest -App ""$man"""  }
     }
 }
 

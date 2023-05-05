@@ -1,3 +1,4 @@
+. "$( sboot_mod "ScoopMod" )"
 . "$( sboot_mod "Utils" )"
 
 Function AppInstalled([String]$AppDir) {
@@ -13,4 +14,21 @@ Function AppInstalled([String]$AppDir) {
 Function AppUninstalled {
     EnsureRegistryKeyDeleted -Path "HKEY_CLASSES_ROOT\*\shell\HxD"
     EnsureRegistryKeyDeleted -Path "HKEY_CLASSES_ROOT\*\shell\HxDReadonly"
+}
+Function EnsureHxdConfiguration {
+    $count = GetUpdateCount
+
+    $isInstalled = ScoopIsInstalled "hxd"
+    if ($isInstalled) {
+	$hxdPath = scoop prefix "hxd"
+	AppInstalled($hxdPath)
+    } else {
+	AppUninstalled
+
+    }
+
+    $count = (GetUpdateCount) - $count
+    if ($count) {
+	IncrementGlobalAssociationChangedCounter
+    }
 }

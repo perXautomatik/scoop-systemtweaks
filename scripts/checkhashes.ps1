@@ -38,7 +38,7 @@ param(
     [Alias('App', 'Name')]
     [String[]] $Manifest = '*',
     [ValidateScript( { if ( Test-Path $_ -Type Container) { $true } else { $false } })]
-    [String] $Dir = "$PSScriptRoot\..\bucket",
+    [String] $Dir = "$PSScriptRoot\..\bucket",     # checks the parent dir
     [Switch] $Recurse,
     [Parameter(ValueFromRemainingArguments)]
     [String[]] $Rest
@@ -49,19 +49,22 @@ begin {
     . "$PSScriptRoot\Helpers.ps1"
 
     if (-not $env:SCOOP_HOME) {
-        if (-not (Get-Command 'scoop' -ErrorAction SilentlyContinue)) { throw 'Scoop installation or SCOOP_HOME environment is required' }
-        $env:SCOOP_HOME = scoop prefix scoop | Resolve-Path
+	if (-not (Get-Command 'scoop' -ErrorAction SilentlyContinue)) { throw 'Scoop installation or SCOOP_HOME environment is required' }
+	$env:SCOOP_HOME = scoop prefix scoop | Resolve-Path
     }
     $Dir = Resolve-Path $Dir
-    $Script = "$env:SCOOP_HOME\bin\checkhashes.ps1"
+$checkhashes = "$env:SCOOP_HOME/bin/checkhashes.ps1"
     $Rest = ($Rest | Select-Object -Unique) -join ' '
 }
 
 process {
     if ($Recurse) {
-        Get-RecursiveFolder | ForEach-Object { Invoke-Expression -Command "$Script -Dir ""$_"" $Rest" }
+	Get-RecursiveFolder | ForEach-Object {
+	Invoke-Expression -Command "& '$checkhashes' -Dir ""$_"" $Rest" }
     } else {
-        foreach ($man in $Manifest) { Invoke-Expression -Command "$Script -App ""$man"" -Dir ""$Dir"" $Rest" }
+	foreach ($man in $Manifest) {
+	 Invoke-Expression -Command "& '$checkhashes' -Dir ""$Dir"" $Script -App ""$man"" $Rest"
+	 }
     }
 }
 

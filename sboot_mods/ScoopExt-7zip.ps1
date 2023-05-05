@@ -1,6 +1,5 @@
 . "$( sboot_mod "Utils" )"
-
-$sevenZipCLSID = "{23170F69-40C1-278A-1000-000100020000}"
+. "$( sboot_mod "ScoopMod" )"
 $fileTypes = @{
     "7z" = 0
     "zip" = 1
@@ -54,17 +53,27 @@ Function AppInstalled([String]$AppDir, $ExcludeExt = @()) {
     EnsureRegistryValue -Path "HKEY_CLASSES_ROOT\Directory\shellex\DragDropHandlers\7-Zip" -Name "" -Type String -Value "$sevenZipCLSID"
     EnsureRegistryValue -Path "HKEY_CLASSES_ROOT\Drive\shellex\DragDropHandlers\7-Zip" -Name "" -Type String -Value "$sevenZipCLSID"
     EnsureRegistryValue -Path "HKEY_CLASSES_ROOT\Folder\shellex\ContextMenuHandlers\7-Zip" -Name "" -Type String -Value "$sevenZipCLSID"
+	EnsureRegistryValue -Path "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Approved" -Name "$clsid" -Type String -Value "7-Zip Shell Extension"
+	EnsureRegistryValue -Path "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Shell Extensions\Approved" -Name "$clsid" -Type String -Value "7-Zip Shell Extension"
+
+	EnsureRegistryValue -Path "HKEY_CLASSES_ROOT\CLSID\$clsid" -Name "" -Type String -Value "7-Zip Shell Extension"
+	EnsureRegistryValue -Path "HKEY_CLASSES_ROOT\CLSID\$clsid\InprocServer32" -Name "" -Type String -Value "$sevenZipPath\7-zip.dll"
+	EnsureRegistryValue -Path "HKEY_CLASSES_ROOT\CLSID\$clsid\InprocServer32" -Name "ThreadingModel" -Type String -Value "Apartment"
+
+	EnsureRegistryValue -Path "HKEY_CLASSES_ROOT\WOW6432Node\CLSID\$clsid" -Name "" -Type String -Value "7-Zip Shell Extension"
+	EnsureRegistryValue -Path "HKEY_CLASSES_ROOT\WOW6432Node\CLSID\$clsid\InprocServer32" -Name "" -Type String -Value "$sevenZipPath\7-zip32.dll"
+	EnsureRegistryValue -Path "HKEY_CLASSES_ROOT\WOW6432Node\CLSID\$clsid\InprocServer32" -Name "ThreadingModel" -Type String -Value "Apartment"
     EnsureRegistryValue -Path "HKEY_CLASSES_ROOT\Folder\shellex\DragDropHandlers\7-Zip" -Name "" -Type String -Value "$sevenZipCLSID"
 
     foreach ($ext in $fileTypes.Keys) {
-        if ( $ExcludeExt.Contains($ext)) {
-            FileTypeUndefine -Type "7-Zip.$ext"
-            FileExtAssociate -Ext "$ext" -FileType $null -IfFileType "7-Zip.$ext"
-        } else {
-            $iconIndex = $fileTypes[$ext]
-            FileTypeDefine -Type "7-Zip.$ext" -Label "$ext Archive" -Command """$AppDir\7zFM.exe"" ""%1""" -Icon "$AppDir\7z.dll,$iconIndex"
-            FileExtAssociate -Ext "$ext" -FileType "7-Zip.$ext"
-        }
+	if ( $ExcludeExt.Contains($ext)) {
+	    FileTypeUndefine -Type "7-Zip.$ext"
+	    FileExtAssociate -Ext "$ext" -FileType $null -IfFileType "7-Zip.$ext"
+	} else {
+	    $iconIndex = $fileTypes[$ext]
+	    FileTypeDefine -Type "7-Zip.$ext" -Label "$ext Archive" -Command """$AppDir\7zFM.exe"" ""%1""" -Icon "$AppDir\7z.dll,$iconIndex"
+	    FileExtAssociate -Ext "$ext" -FileType "7-Zip.$ext"
+	}
     }
 }
 
@@ -79,10 +88,50 @@ Function AppUninstalled($ExcludeExt = @()) {
     EnsureRegistryKeyDeleted -Path "HKEY_CLASSES_ROOT\Directory\shellex\DragDropHandlers\7-Zip"
     EnsureRegistryKeyDeleted -Path "HKEY_CLASSES_ROOT\Drive\shellex\DragDropHandlers\7-Zip"
     EnsureRegistryKeyDeleted -Path "HKEY_CLASSES_ROOT\Folder\shellex\ContextMenuHandlers\7-Zip"
+
+	EnsureRegistryValue -Path "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Approved" -Name "$clsid" -Type String -Value $null
+	EnsureRegistryValue -Path "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Shell Extensions\Approved" -Name "$clsid" -Type String -Value $null
+
+	EnsureRegistryKeyDeleted -Path "HKEY_CLASSES_ROOT\CLSID\$clsid"
+	EnsureRegistryKeyDeleted -Path "HKEY_CLASSES_ROOT\WOW6432Node\CLSID\$clsid"
     EnsureRegistryKeyDeleted -Path "HKEY_CLASSES_ROOT\Folder\shellex\DragDropHandlers\7-Zip"
 
+    }
+
+Function Ensure7ZipConfiguration($ExcludeExt = @()) {
+    $count = GetUpdateCount
+    $sevenZipCLSID = "{23170F69-40C1-278A-1000-000100020000}"
+    $clsid = $sevenZipCLSID
+    $isInstalled = ScoopIsInstalled "7zip"
+    if ($isInstalled) {
+	$sevenZipPath = scoop prefix "7zip"
+	AppInstalled  $sevenZipPath $ExcludeExt
+
+    } else {
+AppUninstalled $ExcludeExt
+    }
+
     foreach ($ext in $fileTypes.Keys) {
-        FileTypeUndefine -Type "7-Zip.$ext"
-        FileExtAssociate -Ext "$ext" -FileType $null -IfFileType "7-Zip.$ext"
+	if (! $ExcludeExt.Contains($ext)) {
+	FileTypeUndefine -Type "7-Zip.$ext"
+	FileExtAssociate -Ext "$ext" -FileType $null -IfFileType "7-Zip.$ext"
+	    $iconIndex = $fileTypes[$ext]
+	    if ($isInstalled) {
+		EnsureRegistryValue -Path "HKEY_CLASSES_ROOT\7-Zip.$ext" -Name "" -Type String -Value "$ext Archive"
+		EnsureRegistryValue -Path "HKEY_CLASSES_ROOT\7-Zip.$ext\shell\open\command" -Name "" -Type String -Value """$sevenZipPath\7zFM.exe"" ""%1"""
+		EnsureRegistryValue -Path "HKEY_CLASSES_ROOT\7-Zip.$ext\DefaultIcon" -Name "" -Type String -Value "$sevenZipPath\7z.dll,$iconIndex"
+
+		EnsureRegistryValue -Path "HKEY_CLASSES_ROOT\.$ext" -Name "" -Type String -Value "7-Zip.$ext"
+	    } else {
+		EnsureRegistryKeyDeleted -Path "HKEY_CLASSES_ROOT\7-Zip.$ext"
+
+		EnsureRegistryValue -Path "HKEY_CLASSES_ROOT\.$ext" -Name "" -Type String -Value $null
+	    }
+	}
+    }
+
+    $count = (GetUpdateCount) - $count
+    if ($count) {
+	IncrementGlobalAssociationChangedCounter
     }
 }
