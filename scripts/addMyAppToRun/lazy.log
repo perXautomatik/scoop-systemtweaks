@@ -1,7 +1,0 @@
-﻿git : fatal: invalid gitfile format: D:/Project Shelf/PowerShellProjectFolder/scripts/WindowsAdmin/addMyAppToRun/.git
-At C:\Users\crbk01\Documents\WindowsPowerShell\profile.ps1:67 char:70
-+ ... le -FilePath .\lazy.log -inputObject (git lazy 'AutoCommit' 2>&1 )} ;
-+                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : NotSpecified: (fatal: invalid ...MyAppToRun/.git:String) [], RemoteException
-    + FullyQualifiedErrorId : NativeCommandError
- 
