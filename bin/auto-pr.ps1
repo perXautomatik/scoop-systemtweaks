@@ -1,51 +1,10 @@
-<#
-.SYNOPSIS
-    Updates manifests and pushes them or creates pull-requests.
-.DESCRIPTION
-    Updates manifests and pushes them to directly the master branch or creates pull-requests for upstream.
-.PARAMETER Manifest
-    Specify manifest to be updated.
-.PARAMETER Dir
-    Specify directory with manifests.
-.PARAMETER Upstream
-    Specify upstream repository with target branch.
-.PARAMETER Push
-    Specify if updates should be directly pushed to 'origin master'.
-.PARAMETER Request
-    Specify if pull-requests should be created on 'upstream master' for each manifest.
-.PARAMETER SpecialSnowflakes
-    Specify list of manifests, which should be force updated.
-#>
 param(
-    [Alias('App', 'Name')]
-    [String] $Manifest = '*',
-    [ValidateScript( { if ( Test-Path $_ -Type Container) { $true } else { $false } })]
-    [String] $Dir = "$PSScriptRoot\..\bucket", # checks the parent dir
-    [ValidatePattern('^(.+)\/(.+):(.+)$')]
-    [String] $Upstream = $((git config --get remote.origin.url) -replace '^.+[:/](?<user>.*)\/(?<repo>.*)(\.git)?$', '${user}/${repo}:master'),
-    [Switch] $Push,
-    [Switch] $Request,
-    [string[]] $SpecialSnowflakes
+    # overwrite upstream param
+    [String]$upstream = "anderlli0053/DEV-tools.git:master"
 )
 
-begin {
-    if (-not $env:SCOOP_HOME) {
-	if (-not (Get-Command 'scoop' -ErrorAction SilentlyContinue)) { throw 'Scoop installation or SCOOP_HOME environment is required' }
-	$env:SCOOP_HOME = scoop prefix scoop | Resolve-Path
-    }
-    $Params = @{
-	App               = $Manifest
-	Dir               = Resolve-Path $Dir
-	Upstream          = $Upstream
-	Push              = $Push
-	Request           = $Request
-	SpecialSnowflakes = $SpecialSnowflakes
-	SkipUpdated       = $true
-    }
-    $autopr = "$env:SCOOP_HOME/bin/auto-pr.ps1"
-}
-
-
-process { & $autopr @Params }
-
-end { Write-Host 'DONE' -ForegroundColor Yellow }
+if(!$env:SCOOP_HOME) { $env:SCOOP_HOME = Resolve-Path (scoop prefix scoop) }
+$autopr = "$env:SCOOP_HOME/bin/auto-pr.ps1"
+$dir = "$PSScriptRoot/../bucket" # checks the parent dir
+Invoke-Expression -command "& '$autopr' -dir '$dir' -upstream $upstream $($args | ForEach-Object { "$_ " })"
+https://github.com/anderlli0053/DEV-tools.git

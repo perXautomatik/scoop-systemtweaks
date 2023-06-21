@@ -9,15 +9,10 @@
     "powershell.codeFormatting.ignoreOneLineBlock": true,
     "json.schemas": [
         {
-            "url": "./schema.json",
+            "url": "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
             "fileMatch": [
-                "bucket/*.json"
-            ],
-            "url": "https://raw.githubusercontent.com/lukesampson/scoop/master/schema.json",
-            "fileMatch": [
-                ".vscode/Template.jsonc",
-                "bucket/*.json",
-            ],
+                "bucket/**/*.json"
+            ]
         }
     ],
     "files.exclude": {
@@ -27,61 +22,5 @@
         "**/CVS": true,
         "**/.DS_Store": true,
         "**/tmp": true
-    },
-    "cSpell.words": [
-        "choco",
-        "powercfg"
-    ],
-    "powershell.codeFormatting.preset": "OTBS",
-    "terminals.terminals": [
-        {
-            "name": "Powershell",
-            "shellPath": "powershell.exe",
-            "shellArgs": [
-                "-NoLogo",
-                "-NoExit",
-            ],
-            "focus": true,
-            "open": true,
-        },
-        {
-            "name": "Powershell Core",
-            "shellPath": "pwsh.exe",
-            "shellArgs": [
-                "-NoLogo",
-                "-NoExit",
-            ],
-            "focus": true,
-            "open": true,
-        },
-        {
-            "name": "Powershell Core (Preview)",
-            "shellPath": "pwsh-preview.exe",
-            "shellArgs": [
-                "-NoLogo",
-                "-NoExit",
-            ],
-            "focus": true,
-            "open": true,
-        },
-    ],
-"yaml.format.bracketSpacing": true,
-"yaml.format.enable": true,
-"yaml.format.singleQuote": true,
-"yaml.validate": true,
-"yaml.schemas": {
-    "http://json.schemastore.org/appveyor": "appveyor.yml",
-    "https://raw.githubusercontent.com/lukesampson/scoop/master/schema.json": [
-        "bucket/*.yml",
-    ],
-    "https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/appveyor.json": "appveyor.yml",
-    "https://raw.githubusercontent.com/lukesampson/scoop/master/schema.json": [
-        "bucket/*.yml",
-    ],
-    "https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/github-workflow.json": [
-        ".github/workflows/*",
-    ],
-    },
-
+    }
 }
-
