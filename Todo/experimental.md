@@ -1,0 +1,2 @@
+direnv	2.32.2	load or unload environment variables depending on the current directory	MIT	 	 
+dirhash	1.23.0	DirHash is a Windows console program that computes the hash of a given directory content or a single file

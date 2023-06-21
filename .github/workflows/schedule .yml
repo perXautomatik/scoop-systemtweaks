@@ -1,0 +1,19 @@
+name: Schedule
+
+on:
+  workflow_dispatch:
+  schedule:
+    # run every 4 hours
+    - cron: '0 */12 * * *'
+
+jobs:
+  excavate:
+    name: scheduled
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@main
+    - name: scheduled
+      uses: shovel-org/GithubActions@main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SKIP_UPDATED: '1'

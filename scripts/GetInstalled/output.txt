@@ -1,0 +1,1314 @@
+ComputerName    : DESKTOP-O9TL38J
+AppID           : 57979c68-f490-55b8-8fed-8b017a5af2fe
+AppName         : Vortex
+Publisher       : Black Tree Gaming Ltd.
+Version         : 1.4.17
+UninstallString : "D:\Program Files\Black Tree Gaming Ltd\Vortex\Uninstall Vortex.exe" /allusers
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : 7-Zip
+AppName         : 7-Zip 21.07 (x64)
+Publisher       : Igor Pavlov
+Version         : 21.07
+UninstallString : "C:\Program Files\7-Zip\Uninstall.exe"
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Air Explorer
+AppName         : Air Explorer
+Publisher       : http://www.airexplorer.net
+Version         : 4.5.0
+UninstallString : D:\Program Files\AirExplorer\uninst.exe
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Air Live Drive
+AppName         : Air Live Drive
+Publisher       : http://www.airlivedrive.com
+Version         : 1.10.1
+UninstallString : C:\Program Files\AirLiveDrive\uninst.exe
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : AutoHotkey
+AppName         : AutoHotkey 1.1.33.10
+Publisher       : Lexikos
+Version         : 1.1.33.10
+UninstallString : "D:\Program Files\AutoHotkey\AutoHotkey.exe" "D:\Program Files\AutoHotkey\Installer.ahk"
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Autorun Organizer_is1
+AppName         : Autorun Organizer version 5.11
+Publisher       : ChemTable Software
+Version         : 5.11
+UninstallString : "D:\Program Files\Autorun Organizer\unins000.exe"
+InstallDate     : 2021-11-14 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : DWAgent
+AppName         : DWAgent
+Publisher       : 
+Version         : 
+UninstallString : "D:\Program Files\DWAgent\native\dwaglnc.exe" uninstall
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Everything
+AppName         : Everything 1.4.1.1015 (x64)
+Publisher       : voidtools
+Version         : 1.4.1.1015
+UninstallString : C:\Program Files\Everything\Uninstall.exe
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Everything 1.5a
+AppName         : Everything 1.5.0.1272a (x64)
+Publisher       : voidtools
+Version         : 1.5.0.1272
+UninstallString : D:\Program Files\Everything 1.5a\Everything64.exe -unsetup
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Git_is1
+AppName         : Git
+Publisher       : The Git Development Community
+Version         : 2.34.1
+UninstallString : "C:\Program Files\Git\unins000.exe"
+InstallDate     : 2022-01-20 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : HardlinkShellExt
+AppName         : Link Shell Extension
+Publisher       : Hermann Schinagl
+Version         : 3.9.3.5
+UninstallString : "C:\Program Files\LinkShellExtension\uninst-HardlinkShellExt_X64.exe"
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Microsoft SQL Server 15
+AppName         : Microsoft SQL Server 2019 (64-bit)
+Publisher       : 
+Version         : 
+UninstallString : 
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Microsoft SQL Server SQL2019
+AppName         : Microsoft SQL Server 2019 (64-bit)
+Publisher       : Microsoft Corporation
+Version         : 
+UninstallString : "C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\SQL2019\x64\SetupARP.exe"
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Notepad2
+AppName         : Notepad2 (Notepad Replacement)
+Publisher       : Florian Balmer
+Version         : 4.2.25 
+UninstallString : rundll32.exe advpack.dll,LaunchINFSectionEx "C:\Program Files\Notepad2\Notepad2.inf",DefaultUninstall,,8,N
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1001850
+AppName         : Siluman Fantasy Demo
+Publisher       : Siluman Soft
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1001850
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1138860
+AppName         : Dark Elf's Adventure Demo
+Publisher       : Uzura Software
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1138860
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1198500
+AppName         : Dizzy Hearts Demo
+Publisher       : Lupiesoft
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1198500
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1223750
+AppName         : Cloud Meadow
+Publisher       : Team Nimbus
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1223750
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1232880
+AppName         : Changeling Tale Demo
+Publisher       : Helmet Fox
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1232880
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1237940
+AppName         : Squirrel Legacy Demo
+Publisher       : Obscure
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1237940
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1247990
+AppName         : Dominatrix Simulator: Threshold Demo
+Publisher       : deviant.tech
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1247990
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1268310
+AppName         : Love & Sex: Second Base Demo
+Publisher       : Andrealphus Games
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1268310
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1275140
+AppName         : Naked Story Demo
+Publisher       : WhiteCute
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1275140
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1276440
+AppName         : Monster surprised you-ki chan Demo
+Publisher       : Nanakusadou
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1276440
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1291390
+AppName         : Third Crisis Demo
+Publisher       : Anduo Games
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1291390
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1349360
+AppName         : Black Smith2 Demo
+Publisher       : XXIV
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1349360
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1349880
+AppName         : Faild Adventurer Demo
+Publisher       : Srloop
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1349880
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1364040
+AppName         : Escape Dungeon Demo
+Publisher       : Hide Games
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1364040
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1383320
+AppName         : Reborn in Sin Demo
+Publisher       : aphrodisia
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1383320
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1393720
+AppName         : Hedon Demo
+Publisher       : Zan
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1393720
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1421560
+AppName         : Primeval Planet: Angimanation Demo
+Publisher       : Dr. Linch
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1421560
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1447560
+AppName         : Atelier Tia Demo
+Publisher       : Atelier Tia (Demo)
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1447560
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1527300
+AppName         : Help! I am REALLY horny! Demo
+Publisher       : Professional Villains
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1527300
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1564200
+AppName         : Daughter of Essence Demo
+Publisher       : Indoor Minotaur Productions
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1564200
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1578360
+AppName         : CityBeat: The Sorority Shuffle Demo
+Publisher       : Ktulhu Solutions
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1578360
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1621820
+AppName         : The Makings of a Lady - Purity Yours to Defile - Demo
+Publisher       : Appetite
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1621820
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1630290
+AppName         : Yu Crossing Animals
+Publisher       : brendor
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1630290
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1697740
+AppName         : Dungeon Coup Demo
+Publisher       : Mr Z Games
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1697740
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1705210
+AppName         : Swimmer Admiration Demo
+Publisher       : PUSH! Soft
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1705210
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1706010
+AppName         : Escape Dungeon 2 Demo
+Publisher       : Hide Games
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1706010
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1724850
+AppName         : Ghost Marriage Matchmaking Demo
+Publisher       : Eternal Alice Game
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1724850
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1742710
+AppName         : The Sanctum Demo
+Publisher       : La Cucaracha Studios
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1742710
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1763430
+AppName         : Karryn's Prison Demo
+Publisher       : Remtairy
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1763430
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1765950
+AppName         : SpookyMilkLife Demo
+Publisher       : MangoMango
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1765950
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1769300
+AppName         : Countess in Crimson Demo
+Publisher       : Digital Seductions
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1769300
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1813830
+AppName         : Didnapper 2 Demo
+Publisher       : DID Games
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1813830
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 1833010
+AppName         : Forever To You! Demo
+Publisher       : AniCore Team
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/1833010
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 20900
+AppName         : The Witcher: Enhanced Edition
+Publisher       : CD PROJEKT RED
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/20900
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 238960
+AppName         : Path of Exile
+Publisher       : Grinding Gear Games
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/238960
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 377160
+AppName         : Fallout 4
+Publisher       : Bethesda Game Studios
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/377160
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 6910
+AppName         : Deus Ex: Game of the Year Edition
+Publisher       : Ion Storm
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/6910
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 712840
+AppName         : King Exit
+Publisher       : ????
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/712840
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Steam App 954200
+AppName         : Eroico Demo
+Publisher       : Kyrieru
+Version         : 
+UninstallString : "D:\Steam\steam.exe" steam://uninstall/954200
+InstallDate     : 
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {0278A8F5-4DDC-40FF-95CC-1D4725CA074B}
+AppName         : SQL Server Management Studio for Reporting Services
+Publisher       : Microsoft Corporation
+Version         : 15.0.18390.0
+UninstallString : MsiExec.exe /I{0278A8F5-4DDC-40FF-95CC-1D4725CA074B}
+InstallDate     : 2021-12-12 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {0FB552DD-543E-48E7-A6F4-2F8D82723C6A}
+AppName         : SQL Server 2019 Common Files
+Publisher       : Microsoft Corporation
+Version         : 15.0.2000.5
+UninstallString : MsiExec.exe /I{0FB552DD-543E-48E7-A6F4-2F8D82723C6A}
+InstallDate     : 2021-12-11 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {11E117C7-01D0-4C4E-9096-2E90843A173E}
+AppName         : PowerShell 7-x64
+Publisher       : Microsoft Corporation
+Version         : 7.2.1.0
+UninstallString : MsiExec.exe /X{11E117C7-01D0-4C4E-9096-2E90843A173E}
+InstallDate     : 2022-01-20 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {12A2980B-E47B-491B-92F5-0BC703841ED4}
+AppName         : Microsoft Visual C++ 2022 X64 Additional Runtime - 14.30.30708
+Publisher       : Microsoft Corporation
+Version         : 14.30.30708
+UninstallString : MsiExec.exe /I{12A2980B-E47B-491B-92F5-0BC703841ED4}
+InstallDate     : 2022-01-20 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {17DCED0E-5B27-453A-B2B4-E487B869B28A}
+AppName         : Microsoft SQL Server 2019 Setup (English)
+Publisher       : Microsoft Corporation
+Version         : 15.0.4013.40
+UninstallString : MsiExec.exe /X{17DCED0E-5B27-453A-B2B4-E487B869B28A}
+InstallDate     : 2021-12-11 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {1D8E6291-B0D5-35EC-8441-6616F567A0F7}
+AppName         : Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219
+Publisher       : Microsoft Corporation
+Version         : 10.0.40219
+UninstallString : MsiExec.exe /X{1D8E6291-B0D5-35EC-8441-6616F567A0F7}
+InstallDate     : 2022-01-24 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {2129312E-5204-4F3A-9039-B6D34DBB00FB}
+AppName         : SQL Server 2019 XEvent
+Publisher       : Microsoft Corporation
+Version         : 15.0.2000.5
+UninstallString : MsiExec.exe /I{2129312E-5204-4F3A-9039-B6D34DBB00FB}
+InstallDate     : 2021-12-11 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {228C3DC2-695E-4FC7-87E4-6A9CE905DA9B}
+AppName         : SQL Server 2019 XEvent
+Publisher       : Microsoft Corporation
+Version         : 15.0.2000.5
+UninstallString : MsiExec.exe /I{228C3DC2-695E-4FC7-87E4-6A9CE905DA9B}
+InstallDate     : 2021-12-11 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {28ED6838-D8E5-454C-A813-12C5EB447CAB}
+AppName         : SQL Server 2019 SQL Diagnostics
+Publisher       : Microsoft Corporation
+Version         : 15.0.2000.5
+UninstallString : MsiExec.exe /I{28ED6838-D8E5-454C-A813-12C5EB447CAB}
+InstallDate     : 2021-12-11 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {2C33F4D4-E9A5-4DE1-ACFE-3A13464E6703}
+AppName         : Microsoft VSS Writer for SQL Server 2019
+Publisher       : Microsoft Corporation
+Version         : 15.0.2000.5
+UninstallString : MsiExec.exe /I{2C33F4D4-E9A5-4DE1-ACFE-3A13464E6703}
+InstallDate     : 2021-12-11 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {31D27B41-A051-49D8-907A-62E0F4A2188C}
+AppName         : Microsoft SQL Server 2019 T-SQL Language Service 
+Publisher       : Microsoft Corporation
+Version         : 15.0.2000.5
+UninstallString : MsiExec.exe /I{31D27B41-A051-49D8-907A-62E0F4A2188C}
+InstallDate     : 2021-12-11 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {37B8F9C7-03FB-3253-8781-2517C99D7C00}
+AppName         : Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61030
+Publisher       : Microsoft Corporation
+Version         : 11.0.61030
+UninstallString : MsiExec.exe /X{37B8F9C7-03FB-3253-8781-2517C99D7C00}
+InstallDate     : 2021-11-15 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {388E784F-2128-4BA8-8449-0A2241163B47}
+AppName         : MTG Arena
+Publisher       : Wizards of the Coast
+Version         : 0.1.4008
+UninstallString : MsiExec.exe /X{388E784F-2128-4BA8-8449-0A2241163B47}
+InstallDate     : 2022-02-17 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {3F338A1B-1DCF-458F-8189-416B09B7D077}
+AppName         : SQL Server Management Studio
+Publisher       : Microsoft Corporation
+Version         : 15.0.18390.0
+UninstallString : MsiExec.exe /I{3F338A1B-1DCF-458F-8189-416B09B7D077}
+InstallDate     : 2021-12-12 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {4CB8C759-75FE-492C-8CEB-EEB9D07E2E8D}
+AppName         : SSMS Post Install Tasks
+Publisher       : Microsoft Corporation
+Version         : 15.0.18390.0
+UninstallString : MsiExec.exe /I{4CB8C759-75FE-492C-8CEB-EEB9D07E2E8D}
+InstallDate     : 2021-12-12 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {5016990D-7F61-4A20-9451-A915D6616DD9}
+AppName         : Microsoft Update Health Tools
+Publisher       : Microsoft Corporation
+Version         : 3.66.0.0
+UninstallString : MsiExec.exe /X{5016990D-7F61-4A20-9451-A915D6616DD9}
+InstallDate     : 2022-03-10 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {5825CDC4-4E99-4CF9-91FE-DB60C0E2F5EA}
+AppName         : Microsoft SQL Server 2019 RsFx Driver
+Publisher       : Microsoft Corporation
+Version         : 15.0.2000.5
+UninstallString : MsiExec.exe /I{5825CDC4-4E99-4CF9-91FE-DB60C0E2F5EA}
+InstallDate     : 2021-12-11 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {5E4344C9-8B97-4ED9-8760-57E221C240F4}
+AppName         : SQL Server 2019 Common Files
+Publisher       : Microsoft Corporation
+Version         : 15.0.2000.5
+UninstallString : MsiExec.exe /I{5E4344C9-8B97-4ED9-8760-57E221C240F4}
+InstallDate     : 2021-12-11 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {619F0B6C-C802-422A-B4E5-294E61F68473}
+AppName         : SQL Server 2019 Database Engine Shared
+Publisher       : Microsoft Corporation
+Version         : 15.0.2000.5
+UninstallString : MsiExec.exe /I{619F0B6C-C802-422A-B4E5-294E61F68473}
+InstallDate     : 2021-12-11 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {6213D6CB-D258-47A3-B1A0-EE1E5C080DCF}
+AppName         : SQL Server 2019 Shared Management Objects
+Publisher       : Microsoft Corporation
+Version         : 15.0.2000.5
+UninstallString : MsiExec.exe /I{6213D6CB-D258-47A3-B1A0-EE1E5C080DCF}
+InstallDate     : 2021-12-11 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {6591F69E-6588-4980-81ED-C8FCBD7EC4B8}_is1
+AppName         : Azure Data Studio
+Publisher       : Microsoft Corporation
+Version         : 1.32.0
+UninstallString : "C:\Program Files\Azure Data Studio\unins000.exe"
+InstallDate     : 2021-12-12 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {65A3A964-3DC3-0103-0000-190724141005}
+AppName         : Dokan Library 1.3.0.1000 (x64)
+Publisher       : Dokany Project
+Version         : 1.3.0.1000
+UninstallString : MsiExec.exe /X{65A3A964-3DC3-0103-0000-190724141005}
+InstallDate     : 2021-11-23 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {814D5077-C93F-42E2-B875-717007C186B9}
+AppName         : SQL Server 2019 DMF
+Publisher       : Microsoft Corporation
+Version         : 15.0.2000.5
+UninstallString : MsiExec.exe /I{814D5077-C93F-42E2-B875-717007C186B9}
+InstallDate     : 2021-12-11 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {853997DA-6FCB-4FB9-918E-E0FF881FAF65}
+AppName         : Microsoft ODBC Driver 17 for SQL Server
+Publisher       : Microsoft Corporation
+Version         : 17.7.2.1
+UninstallString : MsiExec.exe /I{853997DA-6FCB-4FB9-918E-E0FF881FAF65}
+InstallDate     : 2021-12-12 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {8DDAEBCA-4267-4E16-9FE0-D87F21D36891}
+AppName         : SQL Server 2019 Shared Management Objects Extensions
+Publisher       : Microsoft Corporation
+Version         : 15.0.2000.5
+UninstallString : MsiExec.exe /I{8DDAEBCA-4267-4E16-9FE0-D87F21D36891}
+InstallDate     : 2021-12-11 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {929FBD26-9020-399B-9A7A-751D61F0B942}
+AppName         : Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.21005
+Publisher       : Microsoft Corporation
+Version         : 12.0.21005
+UninstallString : MsiExec.exe /X{929FBD26-9020-399B-9A7A-751D61F0B942}
+InstallDate     : 2022-01-24 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {9786E83E-B71A-4526-B58F-64F35C7E2CFE}
+AppName         : Microsoft Analysis Services OLE DB Provider
+Publisher       : Microsoft Corporation
+Version         : 15.0.2000.568
+UninstallString : MsiExec.exe /I{9786E83E-B71A-4526-B58F-64F35C7E2CFE}
+InstallDate     : 2021-12-12 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {99B940D5-1A49-4B6C-B26C-6A88B2C061CA}
+AppName         : SQL Server 2019 Connection Info
+Publisher       : Microsoft Corporation
+Version         : 15.0.2000.5
+UninstallString : MsiExec.exe /I{99B940D5-1A49-4B6C-B26C-6A88B2C061CA}
+InstallDate     : 2021-12-11 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {9ABC27FD-AA4B-3C50-B76B-38FCFFCCDB03}
+AppName         : Google Chrome
+Publisher       : Google LLC
+Version         : 99.0.4844.51
+UninstallString : MsiExec.exe /X{9ABC27FD-AA4B-3C50-B76B-38FCFFCCDB03}
+InstallDate     : 2022-01-20 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {9CF6A157-F0E8-4216-B229-C0CA8204BE2C}_is1
+AppName         : Copy Handler 1.46
+Publisher       : Józef Starosczyk
+Version         : 1.46
+UninstallString : "D:\Program Files\Copy Handler\unins000.exe"
+InstallDate     : 2021-11-14 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {9D6F8754-28E9-4940-B319-3FC8588CF18F}
+AppName         : Microsoft OLE DB Driver for SQL Server
+Publisher       : Microsoft Corporation
+Version         : 18.5.0.0
+UninstallString : MsiExec.exe /I{9D6F8754-28E9-4940-B319-3FC8588CF18F}
+InstallDate     : 2021-12-12 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {9D93D367-A2CC-4378-BD63-79EF3FE76C78}
+AppName         : Microsoft SQL Server 2012 Native Client 
+Publisher       : Microsoft Corporation
+Version         : 11.4.7462.6
+UninstallString : MsiExec.exe /I{9D93D367-A2CC-4378-BD63-79EF3FE76C78}
+InstallDate     : 2021-12-11 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {A1CAC3E0-B321-40FE-8907-4739297D5338}
+AppName         : SQL Server Management Studio for Analysis Services
+Publisher       : Microsoft Corporation
+Version         : 15.0.18390.0
+UninstallString : MsiExec.exe /I{A1CAC3E0-B321-40FE-8907-4739297D5338}
+InstallDate     : 2021-12-12 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {A401EAB9-4FC7-4F0C-8D79-9575E4910FDE}
+AppName         : SQL Server Management Studio
+Publisher       : Microsoft Corporation
+Version         : 15.0.18390.0
+UninstallString : MsiExec.exe /I{A401EAB9-4FC7-4F0C-8D79-9575E4910FDE}
+InstallDate     : 2021-12-12 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {A60B3D8E-5311-4BF1-AF7A-D1AC15F9152E}
+AppName         : SQL Server 2019 Database Engine Services
+Publisher       : Microsoft Corporation
+Version         : 15.0.2000.5
+UninstallString : MsiExec.exe /I{A60B3D8E-5311-4BF1-AF7A-D1AC15F9152E}
+InstallDate     : 2021-12-11 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {A749D8E6-B613-3BE3-8F5F-045C84EBA29B}
+AppName         : Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.21005
+Publisher       : Microsoft Corporation
+Version         : 12.0.21005
+UninstallString : MsiExec.exe /X{A749D8E6-B613-3BE3-8F5F-045C84EBA29B}
+InstallDate     : 2022-01-24 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {A8581199-F913-443B-B058-8E8BF317E71C}
+AppName         : SQL Server 2019 Shared Management Objects
+Publisher       : Microsoft Corporation
+Version         : 15.0.2000.5
+UninstallString : MsiExec.exe /I{A8581199-F913-443B-B058-8E8BF317E71C}
+InstallDate     : 2021-12-11 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {AE043016-3897-41D4-870B-1DAEE62CF152}
+AppName         : Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.30.30708
+Publisher       : Microsoft Corporation
+Version         : 14.30.30708
+UninstallString : MsiExec.exe /I{AE043016-3897-41D4-870B-1DAEE62CF152}
+InstallDate     : 2022-01-20 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {AFFB9D8D-6E58-38A0-A7DD-F6F1F4247B36}
+AppName         : Microsoft Visual Studio Tools for Applications 2017 x64 Hosting Support
+Publisher       : Microsoft Corporation
+Version         : 15.0.27520
+UninstallString : MsiExec.exe /X{AFFB9D8D-6E58-38A0-A7DD-F6F1F4247B36}
+InstallDate     : 2021-12-12 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {B1E7D0FD-7CFE-4E0C-A5DA-0F676499DB91}
+AppName         : Windows PC Health Check
+Publisher       : Microsoft Corporation
+Version         : 3.2.2110.14001
+UninstallString : MsiExec.exe /X{B1E7D0FD-7CFE-4E0C-A5DA-0F676499DB91}
+InstallDate     : 2021-11-16 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_Display.Driver
+AppName         : NVIDIA Graphics Driver 472.39
+Publisher       : NVIDIA Corporation
+Version         : 472.39
+UninstallString : "C:\Windows\SysWOW64\RunDll32.EXE" "C:\Program Files\NVIDIA Corporation\Installer2\InstallerCore\NVI2.DLL",UninstallPackage Display.Driver
+InstallDate     : 2021-12-03 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_installer
+AppName         : NVIDIA Install Application
+Publisher       : NVIDIA Corporation
+Version         : 2.1002.363.0
+UninstallString : 
+InstallDate     : 2021-12-03 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {C7E6D4B7-CB10-4239-BA04-D9339B39D0BD}
+AppName         : SQL Server 2019 Shared Management Objects Extensions
+Publisher       : Microsoft Corporation
+Version         : 15.0.2000.5
+UninstallString : MsiExec.exe /I{C7E6D4B7-CB10-4239-BA04-D9339B39D0BD}
+InstallDate     : 2021-12-11 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {CF2BEA3C-26EA-32F8-AA9B-331F7E34BA97}
+AppName         : Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.61030
+Publisher       : Microsoft Corporation
+Version         : 11.0.61030
+UninstallString : MsiExec.exe /X{CF2BEA3C-26EA-32F8-AA9B-331F7E34BA97}
+InstallDate     : 2021-11-15 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {D459615B-83B0-408F-8F39-6CC07C277BA6}
+AppName         : SQL Server 2019 Batch Parser
+Publisher       : Microsoft Corporation
+Version         : 15.0.2000.5
+UninstallString : MsiExec.exe /I{D459615B-83B0-408F-8F39-6CC07C277BA6}
+InstallDate     : 2021-12-11 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {DE5B7937-D5B5-4157-BC30-BB87F021CFF0}
+AppName         : SQL Server 2019 Database Engine Shared
+Publisher       : Microsoft Corporation
+Version         : 15.0.2000.5
+UninstallString : MsiExec.exe /I{DE5B7937-D5B5-4157-BC30-BB87F021CFF0}
+InstallDate     : 2021-12-11 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {E3E84B2C-FCF6-469F-9FE7-5E8934DB69AD}
+AppName         : SQL Server 2019 Database Engine Services
+Publisher       : Microsoft Corporation
+Version         : 15.0.2000.5
+UninstallString : MsiExec.exe /I{E3E84B2C-FCF6-469F-9FE7-5E8934DB69AD}
+InstallDate     : 2021-12-11 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {E4F17A7C-67CE-4718-B8A1-A7F35336089E}
+AppName         : FilerFrog
+Publisher       : FilerFrog
+Version         : 2.2.0
+UninstallString : MsiExec.exe /I{E4F17A7C-67CE-4718-B8A1-A7F35336089E}
+InstallDate     : 2021-11-14 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {F53C1075-94D5-4C47-9C1B-61A9D2E5D276}
+AppName         : TortoiseGit 2.13.0.0 (64 bit)
+Publisher       : TortoiseGit
+Version         : 2.13.0.0
+UninstallString : MsiExec.exe /I{F53C1075-94D5-4C47-9C1B-61A9D2E5D276}
+InstallDate     : 2022-02-05 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {FC8DC283-4A85-467F-8D0E-2FE4606DCCA1}
+AppName         : SQL Server 2019 DMF
+Publisher       : Microsoft Corporation
+Version         : 15.0.2000.5
+UninstallString : MsiExec.exe /I{FC8DC283-4A85-467F-8D0E-2FE4606DCCA1}
+InstallDate     : 2021-12-11 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {FD730873-33D1-4D1F-9AE0-E259586F8827}
+AppName         : SQL Server 2019 Connection Info
+Publisher       : Microsoft Corporation
+Version         : 15.0.2000.5
+UninstallString : MsiExec.exe /I{FD730873-33D1-4D1F-9AE0-E259586F8827}
+InstallDate     : 2021-12-11 00:00:00
+Architecture    : 64-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Creative Live! Cam Center
+AppName         : Creative Live! Cam Center
+Publisher       : 
+Version         : 
+UninstallString : RunDll32 C:\PROGRA~2\COMMON~1\INSTAL~1\PROFES~1\RunTime\09\01\Intel32\Ctor.dll,LaunchSetup "C:\Program Files (x86)\InstallShield Installation Information\{6BE926E5-66F4-4166-A5E5-E14D7A165BBD}\setup.exe" -l0x9  
+                  /remove
+InstallDate     : 
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : FreeArc
+AppName         : FreeArc 0.51
+Publisher       : Bulat Ziganshin
+Version         : 0.51
+UninstallString : C:\Program Files (x86)\FreeArc\uninst.exe
+InstallDate     : 
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Microsoft Edge
+AppName         : Microsoft Edge
+Publisher       : Microsoft Corporation
+Version         : 99.0.1150.36
+UninstallString : "C:\Program Files (x86)\Microsoft\Edge\Application\99.0.1150.36\Installer\setup.exe" --uninstall --msedge --channel=stable --system-level --verbose-logging
+InstallDate     : 2022-03-09 00:00:00
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Microsoft Edge Update
+AppName         : Microsoft Edge Update
+Publisher       : 
+Version         : 1.3.155.85
+UninstallString : 
+InstallDate     : 
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Microsoft Help Viewer 2.3
+AppName         : Microsoft Help Viewer 2.3
+Publisher       : Microsoft Corporation
+Version         : 2.3.28107
+UninstallString : msiexec.exe /X{BEFC10C1-7032-3C8E-80BC-621A77BFEABD}
+InstallDate     : 
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : NpcapInst
+AppName         : Npcap
+Publisher       : Nmap Project
+Version         : 1.60
+UninstallString : "C:\Program Files\Npcap\uninstall.exe"
+InstallDate     : 
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : ProcessLasso
+AppName         : Process Lasso
+Publisher       : Bitsum
+Version         : 10.4.4.20
+UninstallString : "D:\Program Files\Process Lasso\uninstall.exe"
+InstallDate     : 
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : winscp3_is1
+AppName         : WinSCP 5.19.2
+Publisher       : Martin Prikryl
+Version         : 5.19.2
+UninstallString : "C:\Program Files (x86)\WinSCP\unins000.exe"
+InstallDate     : 2021-11-20 00:00:00
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : Wrye Bash
+AppName         : Wrye Bash
+Publisher       : Wrye & Wrye Bash Development Team
+Version         : 309.1.0.0.0
+UninstallString : "C:\Program Files (x86)\Common Files\Wrye Bash\uninstall.exe"
+InstallDate     : 
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {050d4fc8-5d48-4b8f-8972-47c82c46020f}
+AppName         : Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.30501
+Publisher       : Microsoft Corporation
+Version         : 12.0.30501.0
+UninstallString : "C:\ProgramData\Package Cache\{050d4fc8-5d48-4b8f-8972-47c82c46020f}\vcredist_x64.exe"  /uninstall
+InstallDate     : 
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {05D70284-0B82-4A55-A300-DE30E8519F5B}
+AppName         : CarotDAV
+Publisher       : Rei Software
+Version         : 1.16.1
+UninstallString : MsiExec.exe /I{05D70284-0B82-4A55-A300-DE30E8519F5B}
+InstallDate     : 2022-01-20 00:00:00
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {13A4EE12-23EA-3371-91EE-EFB36DDFFF3E}
+AppName         : Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.21005
+Publisher       : Microsoft Corporation
+Version         : 12.0.21005
+UninstallString : MsiExec.exe /X{13A4EE12-23EA-3371-91EE-EFB36DDFFF3E}
+InstallDate     : 2021-12-12 00:00:00
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {33d1fd90-4274-48a1-9bc1-97e33d9c2d6f}
+AppName         : Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030
+Publisher       : Microsoft Corporation
+Version         : 11.0.61030.0
+UninstallString : "C:\ProgramData\Package Cache\{33d1fd90-4274-48a1-9bc1-97e33d9c2d6f}\vcredist_x86.exe"  /uninstall
+InstallDate     : 
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {4938A647-7EA4-4496-A843-5E338B91C07E}
+AppName         : Integration Services
+Publisher       : Microsoft Corporation
+Version         : 15.0.2000.168
+UninstallString : MsiExec.exe /I{4938A647-7EA4-4496-A843-5E338B91C07E}
+InstallDate     : 2021-12-12 00:00:00
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {4F1405AB-36A8-4383-9C1A-AE00491C255F}
+AppName         : Microsoft Analysis Services OLE DB Provider
+Publisher       : Microsoft Corporation
+Version         : 15.0.2000.568
+UninstallString : MsiExec.exe /I{4F1405AB-36A8-4383-9C1A-AE00491C255F}
+InstallDate     : 2021-12-12 00:00:00
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {52ad9b34-7229-4fa5-b36d-bbe3393d7f20}
+AppName         : Microsoft Visual C++ 2015-2022 Redistributable (x86) - 14.30.30708
+Publisher       : Microsoft Corporation
+Version         : 14.30.30708.0
+UninstallString : "C:\ProgramData\Package Cache\{52ad9b34-7229-4fa5-b36d-bbe3393d7f20}\VC_redist.x86.exe"  /uninstall
+InstallDate     : 
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {5E366957-8D78-4BB5-A790-96F97A9766BD}
+AppName         : Browser for SQL Server 2019
+Publisher       : Microsoft Corporation
+Version         : 15.0.2000.5
+UninstallString : MsiExec.exe /X{5E366957-8D78-4BB5-A790-96F97A9766BD}
+InstallDate     : 2021-12-11 00:00:00
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {707333E0-C796-4E2D-B0DA-5A429706C361}_is1
+AppName         : DDS Viewer
+Publisher       : IdeaMK
+Version         : 
+UninstallString : "D:\Program Files (x86)\DDS Viewer\unins000.exe"
+InstallDate     : 2021-12-15 00:00:00
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {72FA9AB7-189F-4BDE-8856-72DEB90C157B}_is1
+AppName         : Path of Building version 1.4.170
+Publisher       : Openarl
+Version         : 1.4.170
+UninstallString : "D:\Program Files (x86)\Path of Building\unins000.exe"
+InstallDate     : 2021-11-20 00:00:00
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {85A0D6B6-2163-425F-92E7-E0BC4CEDCE9A}_is1
+AppName         : BeeBEEP 5.8.4
+Publisher       : Marco Mastroddi Software
+Version         : 5.8.4
+UninstallString : "D:\Program Files\BeeBEEP\unins000.exe"
+InstallDate     : 2021-11-14 00:00:00
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {900e8595-02c8-4881-953d-6775cc7221d3}
+AppName         : Dokan Library 1.3.0.1000 Bundle
+Publisher       : Dokany Project
+Version         : 1.3.0.1000
+UninstallString : "C:\ProgramData\Package Cache\{900e8595-02c8-4881-953d-6775cc7221d3}\DokanSetup.exe"  /uninstall
+InstallDate     : 
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {90A4562F-D4A1-4B65-906D-41F236CF6902}
+AppName         : Path of Exile
+Publisher       : Grinding Gear Games
+Version         : 3.16.1.54954
+UninstallString : MsiExec.exe /X{90A4562F-D4A1-4B65-906D-41F236CF6902}
+InstallDate     : 2021-11-20 00:00:00
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {9594C97E-6A20-38B3-81BB-2778C4780BE1}
+AppName         : Microsoft Visual Studio Tools for Applications 2017 x86 Hosting Support
+Publisher       : Microsoft Corporation
+Version         : 15.0.27520
+UninstallString : MsiExec.exe /X{9594C97E-6A20-38B3-81BB-2778C4780BE1}
+InstallDate     : 2021-12-12 00:00:00
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {9A25302D-30C0-39D9-BD6F-21E6EC160475}
+AppName         : Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.17
+Publisher       : Microsoft Corporation
+Version         : 9.0.30729
+UninstallString : MsiExec.exe /X{9A25302D-30C0-39D9-BD6F-21E6EC160475}
+InstallDate     : 2021-11-14 00:00:00
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {AAA9F15B-AF45-4562-9991-93A848D3A902}
+AppName         : Visual Studio 2017 Isolated Shell for SSMS
+Publisher       : Microsoft Corporation
+Version         : 15.0.28307.421
+UninstallString : MsiExec.exe /I{AAA9F15B-AF45-4562-9991-93A848D3A902}
+InstallDate     : 2021-12-12 00:00:00
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {AF106DFC-5547-4F32-82B2-C9AE2A4B1C5A}_is1
+AppName         : Arrogant Bastard Typhoon version 1.0
+Publisher       : Arrogant Bastard
+Version         : 1.0
+UninstallString : "C:\Program Files (x86)\Arrogant Bastard\Typhoon\unins000.exe"
+InstallDate     : 2021-11-21 00:00:00
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {B175520C-86A2-35A7-8619-86DC379688B9}
+AppName         : Microsoft Visual C++ 2012 x86 Additional Runtime - 11.0.61030
+Publisher       : Microsoft Corporation
+Version         : 11.0.61030
+UninstallString : MsiExec.exe /X{B175520C-86A2-35A7-8619-86DC379688B9}
+InstallDate     : 2021-11-15 00:00:00
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {BC1D9E47-8927-4AA1-A891-7763BC2475B7}
+AppName         : Skype Meetings App
+Publisher       : Microsoft Corporation
+Version         : 16.2.0.511
+UninstallString : MsiExec.exe /X{BC1D9E47-8927-4AA1-A891-7763BC2475B7}
+InstallDate     : 2021-11-30 00:00:00
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {BD95A8CD-1D9F-35AD-981A-3E7925026EBB}
+AppName         : Microsoft Visual C++ 2012 x86 Minimum Runtime - 11.0.61030
+Publisher       : Microsoft Corporation
+Version         : 11.0.61030
+UninstallString : MsiExec.exe /X{BD95A8CD-1D9F-35AD-981A-3E7925026EBB}
+InstallDate     : 2021-11-15 00:00:00
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {BEFC10C1-7032-3C8E-80BC-621A77BFEABD}
+AppName         : Microsoft Help Viewer 2.3
+Publisher       : Microsoft Corporation
+Version         : 2.3.28107
+UninstallString : MsiExec.exe /X{BEFC10C1-7032-3C8E-80BC-621A77BFEABD}
+InstallDate     : 2021-12-12 00:00:00
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {c09f71ef-fff8-435a-bdc9-3c242a7c36f3}
+AppName         : Microsoft SQL Server Management Studio - 18.10
+Publisher       : Microsoft Corporation
+Version         : 15.0.18390.0
+UninstallString : "C:\ProgramData\Package Cache\{c09f71ef-fff8-435a-bdc9-3c242a7c36f3}\SSMS-Setup-ENU.exe"  /uninstall
+InstallDate     : 
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {C27CC672-3095-4DA8-9805-9BB2A4065704}
+AppName         : Microsoft Visual C++ 2022 X86 Additional Runtime - 14.30.30708
+Publisher       : Microsoft Corporation
+Version         : 14.30.30708
+UninstallString : MsiExec.exe /I{C27CC672-3095-4DA8-9805-9BB2A4065704}
+InstallDate     : 2022-01-20 00:00:00
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {C9292B61-7F3A-44B3-8C38-5662F0AE749D}_is1
+AppName         : FileVoyager version 21.6.27.0
+Publisher       : FileVoyager
+Version         : 21.6.27.0
+UninstallString : "D:\PortableApplauncher\Apps\.free\FileVoyagerPortable\App\FileVoyager\unins000.exe"
+InstallDate     : 2022-02-15 00:00:00
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {ca67548a-5ebe-413a-b50c-4b9ceb6d66c6}
+AppName         : Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030
+Publisher       : Microsoft Corporation
+Version         : 11.0.61030.0
+UninstallString : "C:\ProgramData\Package Cache\{ca67548a-5ebe-413a-b50c-4b9ceb6d66c6}\vcredist_x64.exe"  /uninstall
+InstallDate     : 
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {D436A6E9-EC92-40C9-BF09-1EF1D0ED8BCB}
+AppName         : Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.30.30708
+Publisher       : Microsoft Corporation
+Version         : 14.30.30708
+UninstallString : MsiExec.exe /I{D436A6E9-EC92-40C9-BF09-1EF1D0ED8BCB}
+InstallDate     : 2022-01-20 00:00:00
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {EAF138EC-A867-442D-950D-D77C627D060D}
+AppName         : Git Extensions 3.5.4.12724
+Publisher       : Git Extensions Team
+Version         : 3.5.4.12724
+UninstallString : MsiExec.exe /I{EAF138EC-A867-442D-950D-D77C627D060D}
+InstallDate     : 2022-03-06 00:00:00
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {ee198d9f-cfe1-4f8a-bf5f-7b1be355b63d}
+AppName         : Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.30.30708
+Publisher       : Microsoft Corporation
+Version         : 14.30.30708.0
+UninstallString : "C:\ProgramData\Package Cache\{ee198d9f-cfe1-4f8a-bf5f-7b1be355b63d}\VC_redist.x64.exe"  /uninstall
+InstallDate     : 
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {F0C3E5D1-1ADE-321E-8167-68EF0DE699A5}
+AppName         : Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219
+Publisher       : Microsoft Corporation
+Version         : 10.0.40219
+UninstallString : MsiExec.exe /X{F0C3E5D1-1ADE-321E-8167-68EF0DE699A5}
+InstallDate     : 2022-01-24 00:00:00
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {f14a2334-0511-4225-9f2a-2d55fb683e6c}
+AppName         : Path of Exile
+Publisher       : Grinding Gear Games
+Version         : 3.16.1.54954
+UninstallString : "C:\ProgramData\Package Cache\{f14a2334-0511-4225-9f2a-2d55fb683e6c}\PathOfExileInstaller.exe"  /uninstall
+InstallDate     : 
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {f65db027-aff3-4070-886a-0d87064aabb1}
+AppName         : Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.30501
+Publisher       : Microsoft Corporation
+Version         : 12.0.30501.0
+UninstallString : "C:\ProgramData\Package Cache\{f65db027-aff3-4070-886a-0d87064aabb1}\vcredist_x86.exe"  /uninstall
+InstallDate     : 
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {f895a2f1-ae3f-4212-8af1-7fa1f8c212ea}
+AppName         : Microsoft Visual Studio Tools for Applications 2017
+Publisher       : Microsoft Corporation
+Version         : 15.0.27520
+UninstallString : "C:\ProgramData\Package Cache\{f895a2f1-ae3f-4212-8af1-7fa1f8c212ea}\vsta_setup.exe"  /uninstall
+InstallDate     : 
+Architecture    : 32-bit
+
+ComputerName    : DESKTOP-O9TL38J
+AppID           : {F8CFEB22-A2E7-3971-9EDA-4B11EDEFC185}
+AppName         : Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.21005
+Publisher       : Microsoft Corporation
+Version         : 12.0.21005
+UninstallString : MsiExec.exe /X{F8CFEB22-A2E7-3971-9EDA-4B11EDEFC185}
+InstallDate     : 2021-12-12 00:00:00
+Architecture    : 32-bit

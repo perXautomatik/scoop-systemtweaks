@@ -1,0 +1,12 @@
+[submodule "Disassembler/PowershellRoutines"]
+	path = Disassembler/PowershellRoutines
+	url = https://github.com/perXautomatik/Win10-Initial-Setup-Script.git
+[submodule "loose/postinstallScript"]
+	path = loose/postinstallScript
+	url = https://github.com/perXautomatik/Windows10-Postinstall.git
+[submodule "PowershellRoutines"]
+	path = PowershellRoutines
+	url = https://github.com/perXautomatik/Win10-Initial-Setup-Script.git
+[submodule "postinstallScript"]
+	path = postinstallScript
+	url = https://github.com/perXautomatik/Windows10-Postinstall.git

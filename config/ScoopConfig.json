@@ -1,0 +1,46 @@
+{
+  "buckets": [
+    "main",
+    "sboot@https://github.com/xfournet/scoot-sboot"
+  ],
+  "apps": [
+    "######## Core Scoop dependencies ########",
+    "aria2",
+    "7zip",
+    "git",
+    "sboot/sboot",
+    ""
+  ],
+  "exts": [
+    {
+      "app": "7zip",
+      "parameters": {
+        "excludedExtensions": [
+          "iso",
+          "vhd"
+        ]
+      }
+    },
+    {
+      "app": "hxd"
+    },
+    {
+      "app": "keepass"
+    },
+    {
+      "app": "keystore-explorer"
+    },
+    {
+      "app": "notepadplusplus"
+    },
+    {
+      "app": "vim"
+    },
+    {
+      "app": "windows-terminal"
+    },
+    {
+      "app": "winmerge"
+    }
+  ]
+}
